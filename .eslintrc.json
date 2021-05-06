@@ -63,7 +63,7 @@
     // Common abbreviations are known and readable
     "unicorn/prevent-abbreviations": "off",
     "import/no-cycle": 0,
-    "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
+    // "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
     // TODO: BE CAREFUL OF THIS RULE: https://github.com/facebook/react/issues/15204
     // eslint --fix (or autofix) will cause bug
     // "react-hooks/exhaustive-deps": "warn", // Checks effect dependencies // TODO: BE CAREFUL
