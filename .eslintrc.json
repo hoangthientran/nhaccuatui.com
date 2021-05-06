@@ -66,7 +66,7 @@
     "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
     // TODO: BE CAREFUL OF THIS RULE: https://github.com/facebook/react/issues/15204
     // eslint --fix (or autofix) will cause bug
-    "react-hooks/exhaustive-deps": "warn", // Checks effect dependencies // TODO: BE CAREFUL
+    // "react-hooks/exhaustive-deps": "warn", // Checks effect dependencies // TODO: BE CAREFUL
     "react/self-closing-comp": "off",
     "react/jsx-props-no-spreading": 0,
     // Conflict with prettier
