@@ -1,0 +1,13 @@
+.footerContainer {
+    width: 1170px;
+    margin: 0 auto;
+    max-width: 100%;
+
+    .footer {
+        width: 100%;
+
+        .footerNavigation {
+            display:flex;
+        }
+    }
+}
