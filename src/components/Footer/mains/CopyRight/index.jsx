@@ -4,7 +4,11 @@ import "./style.scss";
 CopyRight.propTypes = {};
 
 function CopyRight() {
-  return <div className="copyRight">@CopyRight</div>;
+  return (
+    <footer>
+      <div className="copyRight">@CopyRight</div>
+    </footer>
+  );
 }
 
 export default CopyRight;

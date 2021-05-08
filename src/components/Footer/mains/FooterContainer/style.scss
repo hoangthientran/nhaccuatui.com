@@ -1,13 +1,10 @@
-.footerContainer {
-    width: 1170px;
-    margin: 0 auto;
-    max-width: 100%;
+.c-footer {
+  width: 1170px;
 
-    .footer {
-        width: 100%;
+  margin: 0 auto;
+  max-width: 100%;
 
-        .footerNavigation {
-            display:flex;
-        }
-    }
+  &__container {
+    width: 100%;
+  }
 }

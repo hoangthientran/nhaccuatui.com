@@ -1,10 +1,10 @@
 import React from "react";
-import BoxChartMusic from "./mains/BoxChartMusic";
-import BoxChatMv from "./mains/BoxChatMv";
-import BoxTopicMusic from "./mains/BoxTopicMusic";
-import Recomment from "./mains/Recomment";
-import Top100 from "./mains/Top100";
-import TrendList from "./mains/TrendList";
+import BoxChartMusic from "../../components/BoxChartMusic";
+import BoxChatMv from "../../components/BoxChatMv";
+import BoxTopicMusic from "../../components/BoxTopicMusic";
+import Recomment from "../../components/Recomment";
+import Top100 from "../../components/Top100";
+import TrendList from "../../components/TrendList";
 import "./style.scss";
 
 BoxRight.propTypes = {};

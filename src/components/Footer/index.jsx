@@ -1,7 +1,8 @@
 import React from "react";
 import Cooperation from "./mains/Cooperation";
-import FooterContainer from "./mains/FooterContainer";
 import CopyRight from "./mains/CopyRight";
+import FooterContainer from "./mains/FooterContainer";
+
 import "./style.scss";
 
 Footer.propTypes = {};

@@ -1,13 +1,14 @@
 .boxContent {
-    margin-top: 18px;
+  margin-top: 18px;
 
-    .wrap {
-        position: relative;
+  .wrap {
+    position: relative;
 
-        .contentWrap {
-            max-width: 1170px;
-            margin: 0 auto;
-            position: relative;
-        }
+    .contentWrap {
+      position: relative;
+
+      margin: 0 auto;
+      max-width: 1170px;
     }
+  }
 }

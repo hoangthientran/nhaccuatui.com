@@ -1,23 +1,23 @@
-.menuHeader {
-    width:100%;
-    z-index: 9999;
-    border-bottom: #dadada solid 1px;
-    // padding: 6px 0 7px 0;
+.menu-header {
+  z-index: 9999;
 
-    .wrap {
-        position: relative;
+  width: 100%;
+  border-bottom: #dadada solid 1px;
 
-        .contentWrap {
-            max-width: 1170px;
-            position: relative;
-            margin: 0 auto;
-    
-            display: flex;
-            flex-flow: row nowrap;
-            align-items: center;
-    
-            height: 56px;
-        }
+  &__wrap {
+    position: relative;
+
+    .contentWrap {
+      position: relative;
+      
+      display: flex;
+      max-width: 1170px;
+      margin: 0 auto;
+      height: 56px;
+
+      flex-flow: row nowrap;
+      align-items: center;
+
     }
-
+  }
 }

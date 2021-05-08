@@ -9,16 +9,18 @@ Header.propTypes = {};
 
 function Header() {
   return (
-    <div className="menuHeader">
-      <div className="wrap">
-        <div className="contentWrap">
-          <MenuTop />
-          <BoxUserLogin />
-          <BoxAction />
-          <BoxSearch />
+    <header>
+      <div className="menu-header">
+        <div className="menu-header__wrap">
+          <div className="contentWrap">
+            <MenuTop />
+            <BoxUserLogin />
+            <BoxAction />
+            <BoxSearch />
+          </div>
         </div>
       </div>
-    </div>
+    </header>
   );
 }
 

@@ -1,16 +1,16 @@
 .footerCooperation {
-    background-color:blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: 100%;
+  height: 180px;
+  
+  background-color: blue;
 
-    width: 100%;
-    height: 180px;
-
+  .footerContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    .footerContainer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  }
 }
