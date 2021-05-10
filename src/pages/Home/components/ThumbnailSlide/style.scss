@@ -1,0 +1,35 @@
+.thumbnail-slide {
+    position: relative;
+
+    width: 840px;
+    height: 79px;
+
+    background-color: #23262d;
+
+
+    .slide-content {
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        display: flex;
+        flex-flow: row nowrap;
+
+        width: 100%;
+        padding-left: 4px;
+
+        .thumbnail-item {
+            width: 158px;
+            height: 58px;
+            padding: 0 0 5px 0;
+
+            margin: 8px 4px 0px 4px;
+
+            img {
+                width: 158px;
+                height: 58px;
+                margin-top: 3px;
+            }
+        }
+    }
+}

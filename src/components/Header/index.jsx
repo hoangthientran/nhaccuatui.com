@@ -12,7 +12,7 @@ function Header() {
     <header>
       <div className="menu-header">
         <div className="menu-header__wrap">
-          <div className="contentWrap">
+          <div className="content-wrap">
             <MenuTop />
             <BoxUserLogin />
             <BoxAction />

@@ -1,13 +1,18 @@
-.boxContent {
-  margin-top: 18px;
+.box-content-wrap {
+  margin-top: 74px;
 
   .wrap {
     position: relative;
 
-    .contentWrap {
+    .content-wrap {
       position: relative;
-
       margin: 0 auto;
+
+      display: grid;
+      grid-template-columns: 840px 300px;
+      grid-template-rows: auto auto;
+      grid-gap: 30px;
+
       max-width: 1170px;
     }
   }

@@ -4,7 +4,7 @@ import "./style.scss";
 NavigationThree.propTypes = {};
 
 function NavigationThree() {
-  return <div className="navigationThree">Top từ khóa</div>;
+  return <div className="navigation-three">Top từ khóa</div>;
 }
 
 export default NavigationThree;

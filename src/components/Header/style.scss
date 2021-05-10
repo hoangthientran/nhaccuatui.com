@@ -1,19 +1,27 @@
 .menu-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 9999;
 
+  display:block;
   width: 100%;
+  height: 42px;
+  padding: 6px 0 7px 0;
   border-bottom: #dadada solid 1px;
+
+  background-color:#ffffff;
 
   &__wrap {
     position: relative;
 
-    .contentWrap {
+    .content-wrap {
       position: relative;
 
       display: flex;
       max-width: 1170px;
       margin: 0 auto;
-      height: 56px;
 
       flex-flow: row nowrap;
       align-items: center;

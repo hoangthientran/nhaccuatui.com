@@ -4,7 +4,7 @@ import "./style.scss";
 BoxChartMusic.propTypes = {};
 
 function BoxChartMusic() {
-  return <div className="boxChartMusic">Box Chart Music</div>;
+  return <div className="box-chart-music">Box Chart Music</div>;
 }
 
 export default BoxChartMusic;

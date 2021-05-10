@@ -6,7 +6,7 @@ CopyRight.propTypes = {};
 function CopyRight() {
   return (
     <footer>
-      <div className="copyRight">@CopyRight</div>
+      <div className="copy-right">@CopyRight</div>
     </footer>
   );
 }

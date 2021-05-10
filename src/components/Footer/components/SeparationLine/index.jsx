@@ -4,7 +4,7 @@ import "./style.scss";
 SeperationLine.propTypes = {};
 
 function SeperationLine() {
-  return <div className="seperationLine"></div>;
+  return <div className="seperation-line"></div>;
 }
 
 export default SeperationLine;

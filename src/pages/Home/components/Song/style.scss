@@ -1,0 +1,82 @@
+.box-content-music-list {
+    position: relative;
+    width: 410px;
+
+    display: flex;
+    flex-flow: row nowrap;
+
+    .info-song {
+      display: flex;
+
+      width: 300px;
+      font-size: 12px;
+
+      img {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+      }
+
+      .name-song {
+        font-size: 14px;
+        font-weight: normal;
+        color: rgba(0,0,0,0.88);
+        max-width: 200px;
+      }
+
+      .name-single-under {
+        font-size: 12px;
+        line-height: 26px;
+        height: 24px; 
+
+        color: rgba(0,0,0,0.5);
+      }
+    }
+
+    .icon_listen {
+      position: absolute;
+      
+      right: 0;
+      font-size: 12px;
+      background: url(https://stc-id.nixcdn.com/v11/images/icon-repeat.png) left -194px no-repeat;
+      padding-left: 15px;
+      line-height: 24px;
+      display: block;
+
+      color: #999999;
+    }
+
+    .box-song-actions {
+      position: absolute;
+
+      display: flex;
+      flex-flow: row nowrap;
+      width: auto;
+      background: #FFF;
+      right: 0;
+
+      margin: 5px 0 0 0;
+      height: 14px;
+
+      display: none;
+
+      .button-add-playlist {
+        display: block;
+
+        width: 16px;
+        height: 14px;
+        margin: 0px 12px 0px 0px;
+        color: rgba(0,0,0,0.88);
+
+        background: url(https://stc-id.nixcdn.com/v11/images/icon.png) -44px top no-repeat;
+      }
+
+      .button-playing {
+        width: 10px;
+        height: 14px;
+        background: url(https://stc-id.nixcdn.com/v11/images/icon.png) -30px top no-repeat;
+        display: block;
+        margin: 0px 0px 0px 0px;
+      }
+    }
+}

@@ -9,7 +9,7 @@ Footer.propTypes = {};
 
 function Footer() {
   return (
-    <div className="boxFooter">
+    <div className="box-footer">
       <Cooperation />
       <FooterContainer />
       <CopyRight />

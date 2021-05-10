@@ -8,9 +8,9 @@ Home.propTypes = {};
 
 function Home() {
   return (
-    <div className="boxContent">
+    <div className="box-content-wrap">
       <div className="wrap">
-        <div className="contentWrap">
+        <div className="content-wrap">
           <BoxLeft />
           <BoxRight />
         </div>

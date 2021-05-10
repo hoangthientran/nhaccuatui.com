@@ -4,7 +4,7 @@ import "./style.scss";
 ListEntertainment.propTypes = {};
 
 function ListEntertainment() {
-  return <div className="listEntertainment">GIẢI TRÍ</div>;
+  return <div className="list-entertainment">GIẢI TRÍ</div>;
 }
 
 export default ListEntertainment;

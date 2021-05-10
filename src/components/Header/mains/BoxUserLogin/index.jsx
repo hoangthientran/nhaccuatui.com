@@ -1,22 +1,25 @@
 import React from "react";
+import BoxLoginLogout from "../../components/BoxLoginLogout";
 import "./style.scss";
 
 BoxUserLogin.propTypes = {};
 
 function BoxUserLogin() {
   return (
-    // Lam lai
-    <div className="boxUserLogin">
-      <div className="avartarUser">
-        <div className="box-avt-wrapper">
-          <div className="box-vip-container">
-            <p className="txt-vip">Mua VIP</p>
-          </div>
+    <div className="box-user-login dialog-login-logout">
+      <div className="box">
+        <div className="box__thumbnail">
+          <img
+            className="thumbnail"
+            src="https://stc-id.nixcdn.com/v11/images/nologin_user.png"
+            alt=""
+          />
         </div>
-        <div className="box-thumbnail-user">
-          {/* <img src="https://stc-id.nixcdn.com/v11/images/nologin_user.png" className="img-avt-user" alt="img-avt-user" /> */}
+        <div className="box__vip">
+          <p className="txt-vip">Mua VIP</p>
         </div>
       </div>
+      <BoxLoginLogout />
     </div>
   );
 }

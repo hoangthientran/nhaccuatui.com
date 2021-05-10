@@ -1,0 +1,81 @@
+.song-hot {
+  float: left;
+  margin-bottom: 10px;
+
+  width: 840px;
+
+  .title-hot {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+
+    h2 {
+      font-size: 26px;
+      text-transform: uppercase;
+      font-weight: 400;
+      line-height: 36px;
+      padding: 0 10px 0 0;
+      margin: 0 0 10px 0;
+      color: #2daaed;
+    }
+
+    .icon-right {
+      color: #2daaed;
+      margin-bottom: 7px;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-flow: row wrap;
+
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style: none;
+
+      width: 152px;
+      height: 206px;
+
+      margin-right: 20px;
+      margin-bottom: 10px;
+
+      .info-song {
+        z-index: 10;
+
+        width:152px;
+        line-height: 19px;
+
+        font-size: 15px;
+        cursor: pointer;
+
+        .name-song {
+          font-size: 14px;
+          color: rgba(0,0,0,0.7);
+          font-weight: 500;
+
+          &:hover {
+              color: #0689ba;
+          }
+        }
+
+        .name-author {
+          font-size: 14px;
+          color: rgba(0,0,0,0.7);
+          font-weight: 300;
+
+          &:hover {
+              color: #0689ba;
+          }
+        }
+      }
+    }
+
+    li:nth-child(5), li:nth-child(10) {
+      margin-right: 0;
+    }
+  }
+}
+
