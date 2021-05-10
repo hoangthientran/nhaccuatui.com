@@ -48,7 +48,6 @@
 
         width: 840px;
 
-
         .item-mv {
           width: 410px;
           padding: 0px;
@@ -72,7 +71,8 @@
 
       list-style: none;
 
-      &:nth-child(5), &:nth-child(9) {
+      &:nth-child(5),
+      &:nth-child(9) {
         margin-right: 0;
       }
     }

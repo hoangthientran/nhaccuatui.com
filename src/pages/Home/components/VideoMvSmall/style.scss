@@ -7,7 +7,7 @@
   .info-song {
     z-index: 10;
 
-    width:152px;
+    width: 152px;
     line-height: 19px;
 
     font-size: 15px;
@@ -15,23 +15,22 @@
 
     .name-song {
       font-size: 14px;
-      color: rgba(0,0,0,0.7);
+      color: rgba(0, 0, 0, 0.7);
       font-weight: 500;
 
       &:hover {
-          color: #0689ba;
+        color: #0689ba;
       }
     }
 
     .name-author {
       font-size: 14px;
-      color: rgba(0,0,0,0.7);
+      color: rgba(0, 0, 0, 0.7);
       font-weight: 300;
 
       &:hover {
-          color: #0689ba;
+        color: #0689ba;
       }
     }
   }
 }
-

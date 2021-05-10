@@ -28,76 +28,81 @@
   .list-song {
     display: flex;
     flex-flow: row wrap;
-    width:840px;
+    width: 840px;
 
     .item-song {
       position: relative;
       width: 410px;
       margin-right: 20px;
       padding: 5px 0px;
-  
+
       border-top: #ececec solid 1px;
       line-height: 24px;
-  
+
       list-style: none;
       cursor: pointer;
 
-      &:nth-child(2) , &:nth-child(4) , &:nth-child(6), &:nth-child(8), &:nth-child(10), &:nth-child(12) {
+      &:nth-child(2),
+      &:nth-child(4),
+      &:nth-child(6),
+      &:nth-child(8),
+      &:nth-child(10),
+      &:nth-child(12) {
         margin-right: 0;
       }
 
       // &:hover > .box-song-actions {
-        
+
       // }
       &:hover > .icon_listen {
         display: none;
       }
-  
+
       // .box-content-music-list {
       //   position: relative;
       //   width: 410px;
-  
+
       //   display: flex;
       //   flex-flow: row nowrap;
-  
+
       //   .info-song {
       //     display: flex;
-  
+
       //     width: 300px;
       //     font-size: 12px;
-  
+
       //     img {
       //       width: 60px;
       //       height: 60px;
       //       margin-right: 10px;
       //     }
-  
+
       //     .name-song {
       //       font-size: 14px;
       //       font-weight: normal;
       //       color: rgba(0,0,0,0.88);
       //       max-width: 200px;
       //     }
-  
+
       //     .name-single-under {
       //       font-size: 12px;
       //       line-height: 26px;
-      //       height: 24px; 
-  
+      //       height: 24px;
+
       //       color: rgba(0,0,0,0.5);
       //     }
       //   }
-  
+
       //   .icon_listen {
       //     position: absolute;
-          
+
       //     right: 0;
       //     font-size: 12px;
       //     background: url(https://stc-id.nixcdn.com/v11/images/icon-repeat.png) left -194px no-repeat;
       //     padding-left: 15px;
       //     line-height: 24px;
       //     display: block;
-  
+
       //     color: #999999;
       //   }
 
@@ -137,5 +142,4 @@
       // }
     }
   }
-
 }

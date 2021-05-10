@@ -1,4 +1,4 @@
-.menu{
+.menu {
   .menu-wrap {
     display: flex;
     flex-flow: row nowrap;
@@ -10,16 +10,18 @@
     padding-left: 0;
 
     list-style: none;
-  
+
     .logo {
-      background: url("https://stc-id.nixcdn.com/v11/images/header_new/logo_new.png") no-repeat;
+      background: url("https://stc-id.nixcdn.com/v11/images/header_new/logo_new.png")
+        no-repeat;
       width: 64px;
       height: 40px;
       background-size: 100%;
       margin: 2px 18px 0 0;
     }
 
-    .item , .item-text {
+    .item,
+    .item-text {
       padding: 1px 16px 0 0;
       font-size: 15px;
       color: #222222;
@@ -76,4 +78,3 @@
     }
   }
 }
-
