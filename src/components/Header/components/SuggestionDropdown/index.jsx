@@ -40,9 +40,14 @@ function SuggestionDropdown() {
       </div>
       <div className="top-keyword-history">
         <h3 className="title_keyword">Lịch sử tìm kiếm của bạn</h3>
+
         <ul className="info-search-history-wrap">
           <li className="top-search-history">
-            <span className="content-search">Muộn rồi mà sao còn</span>
+            <span className="content-search">Nơi ấy con tìm về</span>
+            <span className="btn-delete-search"></span>
+          </li>
+          <li className="top-search-history">
+            <span className="content-search">Nhạc karaoke</span>
             <span className="btn-delete-search"></span>
           </li>
         </ul>

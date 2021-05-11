@@ -1,3 +1,11 @@
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }to {
+      opacity: 1;
+  }
+}
+
 .wrap-menu-dropdown {
   position: absolute;
   top: 162%;
@@ -13,6 +21,7 @@
   border-radius: 3px;
 
   display: none;
+  animation : fadeIn ease-in 0.5s;
 
   .menu-dropdown {
     display: grid;
