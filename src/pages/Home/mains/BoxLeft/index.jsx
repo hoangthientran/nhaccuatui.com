@@ -1,4 +1,7 @@
+// libs
 import React from "react";
+
+// components
 import ListAlbum from "../../components/ListAlbum";
 import ListEntertainment from "../../components/ListEntertainment";
 import ListKaraoke from "../../components/ListKaraoke";
@@ -7,6 +10,7 @@ import MvHot from "../../components/MvHot";
 import SlideDefault from "../../components/SlideDefault";
 import SongHot from "../../components/SongHot";
 
+// others
 import "./style.scss";
 
 BoxLeft.propTypes = {};

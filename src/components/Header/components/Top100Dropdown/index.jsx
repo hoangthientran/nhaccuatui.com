@@ -1,4 +1,7 @@
+// libs
 import React from "react";
+
+// others
 import "./style.scss";
 
 Top100Dropdown.propTypes = {};
@@ -8,7 +11,9 @@ function Top100Dropdown() {
     <ul className="wrap-top100-dropdown">
       <li className="item-dropdown">
         <ul className="wrap-item-small" style={{ width: "130px" }}>
-          <li className="item-small">Việt Nam</li>
+          <li className="item-small ">
+            <span>Việt Nam</span>
+          </li>
           <li className="item-small ">
             <span>Âu Mỹ</span>
           </li>

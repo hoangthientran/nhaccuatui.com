@@ -1,0 +1,98 @@
+.box-suggestion-wrap {
+    position: absolute;
+    top: 138%;
+    right: 0;
+    z-index: 2;
+
+    background-color: #fff;
+    box-shadow: 0 3px 8px #03030342;
+    border-radius: 3px;
+
+    width:290px;
+    display: none;
+
+    .top-keyword-search {
+      width:290px;
+
+      .title_keyword {
+        height: 40px;
+        padding: 6px 0px 0px 16px;
+        color: #222222;
+
+        font-weight: normal;
+        font-size: 15px;
+
+        background: linear-gradient(to right, #eaeaea 0%,#fafafa 100%);
+      }
+
+      .info-search-wrap {
+        width: 290px;
+        .top-search {
+          // position: absolute;
+          display: grid;
+          grid-template-columns: 52px 294px;
+          grid-template-rows: auto;
+
+          line-height: 40px;
+
+          .stt {
+            width: 52px;
+            text-align: center;
+
+            font-size: 16px;
+            font-weight:bold;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+
+    .top-keyword-history {
+      width:290px;
+      height: auto;
+
+      .title_keyword {
+        height: 40px;
+        padding: 6px 0px 0px 16px;
+        color: #222222;
+
+        font-weight: normal;
+        font-size: 15px;
+
+        background: linear-gradient(to right, #eaeaea 0%,#fafafa 100%);
+      }
+
+      .info-search-history-wrap {
+        width: 290px;
+        
+        .top-search-history {
+          position: absolute;
+
+          display: grid;
+          grid-template-columns: 270px 20px;
+          grid-template-rows: auto;
+
+          list-style: none;
+          line-height: 40px;
+
+          .content-search {
+            position: absolute;
+            margin-left: 10px;
+          }
+
+          .btn-delete-search {
+            position: absolute;
+            right: 16px;
+            top: 16px;
+            
+
+            width: 12px;
+            height: 11px;
+
+            background: url(https://stc-id.nixcdn.com/v11/images/header_new/ic_delete_new.png) no-repeat;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+}

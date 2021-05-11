@@ -1,4 +1,7 @@
+// libs
 import React from "react";
+
+// others
 import "./style.scss";
 
 TopicDropdown.propTypes = {};
@@ -7,7 +10,7 @@ function TopicDropdown() {
   return (
     <ul className="wrap-menu-topic-dropdown">
       <li className="item-dropdown">
-        <ul className="wrap-item-small" style={{ width: "130px" }}>
+        <ul className="wrap-item-small">
           <li className="item-small">
             <span>The Best Of 2020 </span>
           </li>

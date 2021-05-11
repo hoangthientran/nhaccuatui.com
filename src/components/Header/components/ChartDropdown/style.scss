@@ -1,26 +1,27 @@
 .wrap-chart-dropdown {
   position: absolute;
   top: 162%;
-  z-index: 9999;
   left: 0;
+  z-index: 9999;
 
   width: 90px;
+  padding: 10px 10px;
 
   background: #fff;
-  padding: 10px 10px;
-  box-shadow: 0 1px 2px #f5f5f5;
+  box-shadow: 0 3px 8px #03030342;
+  border-radius: 3px;
 
   display: none;
 
   .item-dropdown {
     list-style: none;
-    display: flex;
-    flex-flow: row nowrap;
 
     .wrap-item-small {
       list-style: none;
 
       .item-small {
+        margin: 10px 0 0px 8px;
+
         &:hover {
           color: #2daaed;
         }
@@ -33,10 +34,12 @@
 
   &::after {
     content: "";
-    display: block;
     position: absolute;
+    display: block;
+
     top: -24px;
     left: 0px;
+    
     width: 62px;
     height: 25px;
   }

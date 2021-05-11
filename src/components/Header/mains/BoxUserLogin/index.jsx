@@ -1,12 +1,17 @@
+// libs
 import React from "react";
+
+// components
 import BoxLoginLogout from "../../components/BoxLoginLogout";
+
+// others
 import "./style.scss";
 
 BoxUserLogin.propTypes = {};
 
 function BoxUserLogin() {
   return (
-    <div className="box-user-login dialog-login-logout">
+    <div className="box-user-login-wrap box-user-login-wrap--new">
       <div className="box">
         <div className="box__thumbnail">
           <img

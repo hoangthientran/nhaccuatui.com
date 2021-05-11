@@ -1,7 +1,11 @@
+// libs
 import React from "react";
+
+// components
 import BoxLeft from "./mains/BoxLeft";
 import BoxRight from "./mains/BoxRight";
 
+// others
 import "./style.scss";
 
 Home.propTypes = {};

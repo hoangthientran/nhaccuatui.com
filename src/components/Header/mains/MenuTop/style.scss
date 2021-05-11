@@ -1,8 +1,9 @@
-.menu {
-  .menu-wrap {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
+.menu-top-wrap {
+  .menu-top {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto;
+
     align-items: center;
 
     width: auto;
@@ -31,8 +32,8 @@
     }
 
     .item {
-      margin-bottom: 5px;
       position: relative;
+      margin-bottom: 5px;
 
       cursor: pointer;
 
@@ -45,35 +46,35 @@
       }
     }
 
-    .item-song:hover .wrap-menu-dropdown {
+    .item--song:hover .wrap-menu-dropdown {
       display: block;
     }
 
-    .item-playlist:hover .wrap-menu-dropdown {
+    .item--playlist:hover .wrap-menu-dropdown {
       display: block;
     }
 
-    .item-collection:hover .wrap-menu-collection-dropdown {
+    .item--collection:hover .wrap-menu-collection-dropdown {
       display: block;
     }
 
-    .item-video:hover .wrap-menu-dropdown {
+    .item--video:hover .wrap-menu-dropdown {
       display: block;
     }
 
-    .item-chart:hover .wrap-chart-dropdown {
+    .item--chart:hover .wrap-chart-dropdown {
       display: block;
     }
 
-    .item-topic:hover .wrap-menu-topic-dropdown {
+    .item--topic:hover .wrap-menu-topic-dropdown {
       display: block;
     }
 
-    .item-top100:hover .wrap-top100-dropdown {
+    .item--top100:hover .wrap-top100-dropdown {
       display: block;
     }
 
-    .item-topic-other:hover .wrap-topic-other-dropdown {
+    .item--topic-other:hover .wrap-topic-other-dropdown {
       display: block;
     }
   }

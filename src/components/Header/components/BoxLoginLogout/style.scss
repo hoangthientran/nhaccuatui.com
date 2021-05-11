@@ -1,26 +1,32 @@
 .wrap-box-login-logout-dropdown {
   position: absolute;
   top: 112%;
-  z-index: 9999;
   left: 28px;
+  z-index: 9999;
 
   width: 135px;
 
   background: #fff;
-  padding: 10px 10px;
-  box-shadow: 0 1px 2px #f5f5f5;
+  box-shadow: 0 3px 8px #03030342;
+  border-radius: 6px;
 
   display: none;
 
   .item-dropdown {
     list-style: none;
-    display: flex;
-    flex-flow: row nowrap;
 
     .wrap-item-small {
       list-style: none;
 
       .item-small {
+        text-align: center;
+
+        padding: 10px 0;
+
+        &:nth-child(1) {
+          border-bottom: 1px solid #f1f1f1;
+        }
+
         &:hover {
           color: #2daaed;
         }
@@ -35,8 +41,10 @@
     content: "";
     display: block;
     position: absolute;
+
     top: -24px;
     left: 0px;
+    
     width: 62px;
     height: 25px;
   }
