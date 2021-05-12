@@ -11,7 +11,7 @@ BoxRight.propTypes = {};
 
 function BoxRight() {
   return (
-    <div className="box-right">
+    <div className="box-right-wrapper">
       <TrendList />
       <Recomment />
       <BoxTopicMusic />

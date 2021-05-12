@@ -1,6 +1,5 @@
 // libs
 import React from "react";
-
 // components
 import ChartDropdown from "../../components/ChartDropdown";
 import CollectionDropdown from "../../components/CollectionDropdown";
@@ -8,7 +7,6 @@ import MenuSongDropdown from "../../components/MenuSongDropdown";
 import Top100Dropdown from "../../components/Top100Dropdown";
 import TopicDropdown from "../../components/TopicDropdown";
 import TopicOtherDropdown from "../../components/TopicOtherDropdown";
-
 // others
 import "./style.scss";
 

@@ -1,61 +1,18 @@
+// libs
 import React from "react";
-import ThumbnailAlbum from "../ThumbnailAlbum";
-import { RightOutlined } from "@ant-design/icons";
+// components
+import TitleBoxKey from "../TitleBoxKey";
+import ListSongToday from "../ListSongToday";
+// others
 import "./style.scss";
 
 ListAlbum.propTypes = {};
 
 function ListAlbum() {
   return (
-    <div className="listAlbum">
-      <div className="title-album">
-        <h2>NGHE GÌ HÔM NAY</h2>
-        <span className="icon-right">
-          <RightOutlined />
-        </span>
-      </div>
-      <ul>
-        <li>
-          <ThumbnailAlbum />
-          <div className="info-album">
-            <span className="name-albumn">
-              Mother's Love: Mother's Day Songs
-            </span>
-          </div>
-        </li>
-        <li>
-          <ThumbnailAlbum />
-          <div className="info-album">
-            <span className="name-albumn">
-              Mother's Love: Mother's Day Songs
-            </span>
-          </div>
-        </li>
-        <li>
-          <ThumbnailAlbum />
-          <div className="info-album">
-            <span className="name-albumn">
-              Mother's Love: Mother's Day Songs
-            </span>
-          </div>
-        </li>
-        <li>
-          <ThumbnailAlbum />
-          <div className="info-album">
-            <span className="name-albumn">
-              Mother's Love: Mother's Day Songs
-            </span>
-          </div>
-        </li>
-        <li>
-          <ThumbnailAlbum />
-          <div className="info-album">
-            <span className="name-albumn">
-              Mother's Love: Mother's Day Songs
-            </span>
-          </div>
-        </li>
-      </ul>
+    <div className="list-album-wrapper">
+      <TitleBoxKey />
+      <ListSongToday />
     </div>
   );
 }

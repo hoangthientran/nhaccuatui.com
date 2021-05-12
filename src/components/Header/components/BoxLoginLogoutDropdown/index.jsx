@@ -1,15 +1,14 @@
 // libs
 import React from "react";
-
 // others
 import "./style.scss";
 
-BoxLoginLogout.propTypes = {};
+BoxLoginLogoutDropdown.propTypes = {};
 
-function BoxLoginLogout() {
+function BoxLoginLogoutDropdown() {
   return (
-    <ul className="wrap-box-login-logout-dropdown">
-      <li className="item-dropdown">
+    <ul className="box-login-logout-dropdown-wrapper">
+      <li className="item-dropdown-inner">
         <ul className="wrap-item-small" style={{ width: "135px" }}>
           <li className="item-small">
             <span>Đăng nhập</span>
@@ -23,4 +22,4 @@ function BoxLoginLogout() {
   );
 }
 
-export default BoxLoginLogout;
+export default BoxLoginLogoutDropdown;
