@@ -1,5 +1,6 @@
 // libs
 import React, { useEffect, useRef, useState } from "react";
+// import classnames from "classnames";
 // dataSources
 import { listImage } from "../../../../mocks";
 // others
@@ -35,7 +36,7 @@ function SlideDefault() {
     <img
       onMouseOver={() => handleHover(index)}
       onFocus={() => handleHover(index)}
-      className={`item-img active${item.id}`}
+      className={`item-img ${item.id}`}
       src={item.src}
       key={item.id}
       alt="thumnail"
