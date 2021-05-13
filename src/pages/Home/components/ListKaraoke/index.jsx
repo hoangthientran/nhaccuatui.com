@@ -4,7 +4,7 @@ import "./style.scss";
 ListKaraoke.propTypes = {};
 
 function ListKaraoke() {
-  return <div className="listKaraoke">KARAOKE</div>;
+  return <div className="list-karaoke">KARAOKE</div>;
 }
 
 export default ListKaraoke;

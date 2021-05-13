@@ -1,0 +1,18 @@
+.list-song-hot-wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto;
+
+  margin: 0;
+  padding: 0;
+
+  .list-song-hot {
+    margin-right: 20px;
+    margin-bottom: 10px;
+
+    width: 152px;
+    height: 206px;
+
+    list-style: none;
+  }
+}

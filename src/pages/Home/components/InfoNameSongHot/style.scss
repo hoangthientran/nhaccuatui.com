@@ -1,0 +1,40 @@
+.info-song-wrapper {
+  width: 152px;
+
+  line-height: 19px;
+  font-size: 15px;
+
+  cursor: pointer;
+
+  .name-song {
+    font-size: 14px;
+    font-weight: 650;
+
+    line-height: 20px;
+    height: 22px;
+
+    display: -webkit-box;
+
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    color: rgba(0, 0, 0, 0.7);
+
+    &:hover {
+      color: #0689ba;
+    }
+  }
+
+  .name-author {
+    font-size: 14px;
+    font-weight: normal;
+
+    color: rgba(0, 0, 0, 0.7);
+
+    &:hover {
+      color: #0689ba;
+    }
+  }
+}

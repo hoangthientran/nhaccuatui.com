@@ -4,7 +4,7 @@ import "./style.scss";
 BoxChatMv.propTypes = {};
 
 function BoxChatMv() {
-  return <div className="boxChatMv">Box Chat Mv</div>;
+  return <div className="box-chat-mv">Box Chat Mv</div>;
 }
 
 export default BoxChatMv;

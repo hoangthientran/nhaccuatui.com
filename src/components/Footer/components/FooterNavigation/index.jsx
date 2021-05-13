@@ -9,7 +9,7 @@ FooterNavigation.propTypes = {};
 
 function FooterNavigation() {
   return (
-    <div className="footerNavigation">
+    <div className="footer-navigation">
       <NavigationOne />
       <NavigationTwo />
       <NavigationThree />

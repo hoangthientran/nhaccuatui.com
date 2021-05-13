@@ -1,21 +1,30 @@
-.menu-header {
+.menu-header-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 9999;
 
+  display: block;
   width: 100%;
+  height: 42px;
+  padding: 6px 0 7px 0;
   border-bottom: #dadada solid 1px;
 
-  &__wrap {
+  background-color: #ffffff;
+
+  .menu-header {
     position: relative;
 
-    .contentWrap {
+    &__content {
       position: relative;
 
-      display: flex;
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      grid-template-rows: auto;
+
       max-width: 1170px;
       margin: 0 auto;
-      height: 56px;
-
-      flex-flow: row nowrap;
       align-items: center;
     }
   }
