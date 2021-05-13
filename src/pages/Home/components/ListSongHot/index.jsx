@@ -4,7 +4,7 @@ import { CustomerServiceOutlined, PlayCircleOutlined } from "@ant-design/icons";
 // others
 import "./style.scss";
 // mock
-import { formatPrice, listContentSongHot } from "../../../../mocks";
+import { formatNumber, listContentSongHot } from "../../../../mocks";
 
 ListSongHot.propTypes = {};
 
@@ -21,7 +21,7 @@ function ListSongHot() {
                 </span>
                 <span className="number-listen">
                   {" "}
-                  {formatPrice(item.number)}{" "}
+                  {formatNumber(item.number)}{" "}
                 </span>
               </div>
               <span className="icon_play">

@@ -11,7 +11,7 @@ ListAlbum.propTypes = {};
 function ListAlbum() {
   return (
     <div className="list-album-wrapper">
-      <TitleBoxKey />
+      <TitleBoxKey>NGHE GÌ HÔM NAY</TitleBoxKey>
       <ListSongToday />
     </div>
   );
