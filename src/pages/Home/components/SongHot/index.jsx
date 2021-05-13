@@ -1,20 +1,16 @@
 // libs
 import React from "react";
 // components
-import TitleSongHot from "../TitleSongHot";
 import ListSongHot from "../ListSongHot";
+import TitleBoxKey from "../TitleBoxKey";
 // others
 import "./style.scss";
 
-SongHot.propTypes = {};
-
-function SongHot() {
-  return (
-    <div className="song-hot-wrapper">
-      <TitleSongHot />
-      <ListSongHot />
-    </div>
-  );
-}
+const SongHot = () => (
+  <div className="song-hot-wrapper">
+    <TitleBoxKey>MỚI PHÁT HÀNH</TitleBoxKey>
+    <ListSongHot />
+  </div>
+);
 
 export default SongHot;
