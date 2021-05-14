@@ -1,0 +1,42 @@
+.info-karaoke-wrapper {
+  width: 195px;
+
+  margin-top: 8px;
+
+  line-height: 19px;
+  font-size: 15px;
+
+  cursor: pointer;
+
+  .name-karaoke-small {
+    font-size: 14px;
+    font-weight: 650;
+
+    line-height: 20px;
+    height: 22px;
+
+    display: -webkit-box;
+
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    color: rgba(0, 0, 0, 0.7);
+
+    &:hover {
+      color: #0689ba;
+    }
+  }
+
+  .name-author-small {
+    font-size: 14px;
+    font-weight: normal;
+
+    color: rgba(0, 0, 0, 0.7);
+
+    &:hover {
+      color: #0689ba;
+    }
+  }
+}
