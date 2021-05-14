@@ -1,145 +1,123 @@
-.wrap-list-song {
-  width: 840px;
-
+.list-song-wrapper {
   margin: 20px 0 20px 0;
 
-  .title-mv {
-    display: flex;
-    align-items: center;
+  width: 840px;
 
-    width: 100%;
+  // .list-song {
+  //   display: flex;
+  //   flex-flow: row wrap;
+  //   width: 840px;
 
-    h2 {
-      font-size: 26px;
-      text-transform: uppercase;
-      font-weight: 400;
-      line-height: 36px;
-      padding: 0 10px 0 0;
-      margin: 0 0 10px 0;
-      color: #2daaed;
-    }
+  //   .item-song {
+  //     position: relative;
+  //     width: 410px;
+  //     margin-right: 20px;
+  //     padding: 5px 0px;
 
-    .icon-right {
-      color: #2daaed;
-      margin-bottom: 7px;
-    }
-  }
+  //     border-top: #ececec solid 1px;
+  //     line-height: 24px;
 
-  .list-song {
-    display: flex;
-    flex-flow: row wrap;
-    width: 840px;
+  //     list-style: none;
+  //     cursor: pointer;
 
-    .item-song {
-      position: relative;
-      width: 410px;
-      margin-right: 20px;
-      padding: 5px 0px;
+  //     &:nth-child(2),
+  //     &:nth-child(4),
+  //     &:nth-child(6),
+  //     &:nth-child(8),
+  //     &:nth-child(10),
+  //     &:nth-child(12) {
+  //       margin-right: 0;
+  //     }
 
-      border-top: #ececec solid 1px;
-      line-height: 24px;
+  //     // &:hover > .box-song-actions {
 
-      list-style: none;
-      cursor: pointer;
+  //     // }
+  //     &:hover > .icon_listen {
+  //       display: none;
+  //     }
 
-      &:nth-child(2),
-      &:nth-child(4),
-      &:nth-child(6),
-      &:nth-child(8),
-      &:nth-child(10),
-      &:nth-child(12) {
-        margin-right: 0;
-      }
+  //     // .box-content-music-list {
+  //     //   position: relative;
+  //     //   width: 410px;
 
-      // &:hover > .box-song-actions {
+  //     //   display: flex;
+  //     //   flex-flow: row nowrap;
 
-      // }
-      &:hover > .icon_listen {
-        display: none;
-      }
+  //     //   .info-song {
+  //     //     display: flex;
 
-      // .box-content-music-list {
-      //   position: relative;
-      //   width: 410px;
+  //     //     width: 300px;
+  //     //     font-size: 12px;
 
-      //   display: flex;
-      //   flex-flow: row nowrap;
+  //     //     img {
+  //     //       width: 60px;
+  //     //       height: 60px;
+  //     //       margin-right: 10px;
+  //     //     }
 
-      //   .info-song {
-      //     display: flex;
+  //     //     .name-song {
+  //     //       font-size: 14px;
+  //     //       font-weight: normal;
+  //     //       color: rgba(0,0,0,0.88);
+  //     //       max-width: 200px;
+  //     //     }
 
-      //     width: 300px;
-      //     font-size: 12px;
+  //     //     .name-single-under {
+  //     //       font-size: 12px;
+  //     //       line-height: 26px;
+  //     //       height: 24px;
 
-      //     img {
-      //       width: 60px;
-      //       height: 60px;
-      //       margin-right: 10px;
-      //     }
+  //     //       color: rgba(0,0,0,0.5);
+  //     //     }
+  //     //   }
 
-      //     .name-song {
-      //       font-size: 14px;
-      //       font-weight: normal;
-      //       color: rgba(0,0,0,0.88);
-      //       max-width: 200px;
-      //     }
+  //     //   .icon_listen {
+  //     //     position: absolute;
 
-      //     .name-single-under {
-      //       font-size: 12px;
-      //       line-height: 26px;
-      //       height: 24px;
+  //     //     right: 0;
+  //     //     font-size: 12px;
+  //     //     background: url(https://stc-id.nixcdn.com/v11/images/icon-repeat.png) left -194px no-repeat;
+  //     //     padding-left: 15px;
+  //     //     line-height: 24px;
+  //     //     display: block;
 
-      //       color: rgba(0,0,0,0.5);
-      //     }
-      //   }
+  //     //     color: #999999;
+  //     //   }
 
-      //   .icon_listen {
-      //     position: absolute;
+  //     //   .box-song-actions {
+  //     //     position: absolute;
 
-      //     right: 0;
-      //     font-size: 12px;
-      //     background: url(https://stc-id.nixcdn.com/v11/images/icon-repeat.png) left -194px no-repeat;
-      //     padding-left: 15px;
-      //     line-height: 24px;
-      //     display: block;
+  //     //     display: flex;
+  //     //     flex-flow: row nowrap;
+  //     //     width: auto;
+  //     //     background: #FFF;
+  //     //     right: 0;
 
-      //     color: #999999;
-      //   }
+  //     //     margin: 5px 0 0 0;
+  //     //     height: 14px;
 
-      //   .box-song-actions {
-      //     position: absolute;
+  //     //     display: none;
 
-      //     display: flex;
-      //     flex-flow: row nowrap;
-      //     width: auto;
-      //     background: #FFF;
-      //     right: 0;
+  //     //     .button-add-playlist {
+  //     //       display: block;
 
-      //     margin: 5px 0 0 0;
-      //     height: 14px;
+  //     //       width: 16px;
+  //     //       height: 14px;
+  //     //       margin: 0px 12px 0px 0px;
+  //     //       color: rgba(0,0,0,0.88);
 
-      //     display: none;
+  //     //       background: url(https://stc-id.nixcdn.com/v11/images/icon.png) -44px top no-repeat;
+  //     //     }
 
-      //     .button-add-playlist {
-      //       display: block;
-
-      //       width: 16px;
-      //       height: 14px;
-      //       margin: 0px 12px 0px 0px;
-      //       color: rgba(0,0,0,0.88);
-
-      //       background: url(https://stc-id.nixcdn.com/v11/images/icon.png) -44px top no-repeat;
-      //     }
-
-      //     .button-playing {
-      //       width: 10px;
-      //       height: 14px;
-      //       background: url(https://stc-id.nixcdn.com/v11/images/icon.png) -30px top no-repeat;
-      //       display: block;
-      //       margin: 0px 0px 0px 0px;
-      //     }
-      //   }
-      // }
-    }
-  }
+  //     //     .button-playing {
+  //     //       width: 10px;
+  //     //       height: 14px;
+  //     //       background: url(https://stc-id.nixcdn.com/v11/images/icon.png) -30px top no-repeat;
+  //     //       display: block;
+  //     //       margin: 0px 0px 0px 0px;
+  //     //     }
+  //     //   }
+  //     // }
+  //   }
+  // }
 }

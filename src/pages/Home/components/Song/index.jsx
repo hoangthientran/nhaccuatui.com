@@ -1,30 +1,27 @@
+// libs
 import React from "react";
+import PropTypes from "prop-types";
+// components
+import InfoSong from "../InfoSong";
+import BoxIconListen from "../BoxIconListen";
+import BoxSongAction from "../BoxSongAction";
+// others
 import "./style.scss";
 
-Song.propTypes = {};
+const Song = ({ item }) => (
+  <div className="box-content-music-list-wrapper">
+    <InfoSong item={item} />
+    <BoxIconListen item={item} />
+    <BoxSongAction />
+  </div>
+);
 
-function Song() {
-  return (
-    <div className="box-content-music-list">
-      <div className="info-song">
-        <div>
-          <img
-            alt="img-song"
-            src="https://avatar-ex-swe.nixcdn.com/song/2021/05/06/e/0/1/8/1620313689543.jpg"
-          />
-        </div>
-        <div>
-          <h3 className="name-song">Răng khôn</h3>
-          <div className="name-single-under">RIN9</div>
-        </div>
-      </div>
-      <span className="icon_listen">12.441</span>
-      <div className="box-song-actions">
-        <span className="button-add-playlist"></span>
-        <span className="button-playing"></span>
-      </div>
-    </div>
-  );
-}
+Song.propTypes = {
+  item: PropTypes.object,
+};
+
+Song.defaultProps = {
+  item: {},
+};
 
 export default Song;

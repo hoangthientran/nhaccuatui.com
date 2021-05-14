@@ -1,0 +1,29 @@
+.box-icon-listen-wrapper {
+  // position: relative;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+  margin-left: 36px;
+
+  .icon_listen {
+    margin-right: 3px;
+
+    font-size: 12px;
+    line-height: 24px;
+
+    display: block;
+
+    color: #999999;
+  }
+
+  .number-view {
+    font-size: 12px;
+    line-height: 24px;
+
+    display: block;
+
+    color: #999999;
+  }
+}

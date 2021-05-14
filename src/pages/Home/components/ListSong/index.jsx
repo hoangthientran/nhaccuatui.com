@@ -1,59 +1,16 @@
+// libs
 import React from "react";
-import { RightOutlined } from "@ant-design/icons";
+import ItemSongs from "../ItemSongs";
+// components
+import TitleBoxKey from "../TitleBoxKey";
+// others
 import "./style.scss";
-import Song from "../Song";
 
-ListSong.propTypes = {};
-
-function ListSong() {
-  return (
-    <div className="wrap-list-song">
-      <div className="title-mv">
-        <h2>BÀI HÁT</h2>
-        <span className="icon-right">
-          <RightOutlined />
-        </span>
-      </div>
-      <ul className="list-song">
-        <li className="item-song">
-          <Song />
-        </li>
-        <li className="item-song">
-          <Song />
-        </li>
-        <li className="item-song">
-          <Song />
-        </li>
-        <li className="item-song">
-          <Song />
-        </li>
-        <li className="item-song">
-          <Song />
-        </li>
-        <li className="item-song">
-          <Song />
-        </li>
-        <li className="item-song">
-          <Song />
-        </li>
-        <li className="item-song">
-          <Song />
-        </li>
-        <li className="item-song">
-          <Song />
-        </li>
-        <li className="item-song">
-          <Song />
-        </li>
-        <li className="item-song">
-          <Song />
-        </li>
-        <li className="item-song">
-          <Song />
-        </li>
-      </ul>
-    </div>
-  );
-}
+const ListSong = () => (
+  <div className="list-song-wrapper">
+    <TitleBoxKey>BÀI HÁT</TitleBoxKey>
+    <ItemSongs />
+  </div>
+);
 
 export default ListSong;
