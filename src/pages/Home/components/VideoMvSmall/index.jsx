@@ -1,20 +1,19 @@
+// libs
 import React from "react";
+// components
 import ThumbnailVideoSmall from "../ThumbnailVideoSmall";
-
+import InfoNameMvThumbnailSmall from "../InfoNameMvThumbnailSmall";
+// dataSources
+import { listContentSmallMvHot } from "../../../../mocks/Home/MvHot";
+// others
 import "./style.scss";
 
-VideoMvSmall.propTypes = {};
-
-function VideoMvSmall() {
-  return (
-    <div className="wrap-video-small">
-      <ThumbnailVideoSmall />
-      <div className="info-song">
-        <h3 className="name-song">BAD LOVE</h3>
-        <h4 className="name-author">Khánh Vũ KVD</h4>
-      </div>
+const VideoMvSmall = () =>
+  listContentSmallMvHot.map((item) => (
+    <div className="video-small-wrapper" key={item.id}>
+      <ThumbnailVideoSmall item={item} />
+      <InfoNameMvThumbnailSmall item={item} />
     </div>
-  );
-}
+  ));
 
 export default VideoMvSmall;

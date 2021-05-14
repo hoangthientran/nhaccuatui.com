@@ -1,0 +1,70 @@
+.action-info-thumnail-video-small-wrapper {
+  position: absolute;
+  z-index: 2;
+
+  width: 195px;
+  height: 109px;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: all 0.45s ease 0s;
+  }
+
+  &:hover > .icon_play-small {
+    display: block;
+    animation: fadeIn ease-in 0.6s;
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  }
+
+  .view-listion-small {
+    position: absolute;
+    right: 0;
+
+    padding: 0 5px 0 15px;
+
+    font-size: 12px;
+    line-height: 24px;
+
+    background: url(https://stc-id.nixcdn.com/v11/images/bg_view_listen.png) left top;
+
+    color: #c7c7c7;
+
+    .icon-view-small {
+      margin: 8px 3px 0 0;
+
+      width: 14px;
+      height: 14px;
+    }
+
+    .number {
+      color: #c7c7c7;
+      font-size: 12px;
+      line-height: 24px;
+    }
+  }
+
+  .icon_play-small {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+
+    width: 36px;
+    height: 36px;
+
+    font-size: 36px;
+
+    color: #fff;
+
+    display: none;
+  }
+}

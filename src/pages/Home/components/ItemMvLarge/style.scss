@@ -1,0 +1,27 @@
+.item-mv-large-wrapper {
+  margin-bottom: 10px;
+
+  width: 840px;
+  height: 250px;
+
+  list-style: none;
+
+  .mv-large-wrapper {
+    display: flex;
+
+    width: 840px;
+
+    .item-mv-large {
+      padding: 0px;
+      margin-right: 20px;
+
+      width: 410px;
+
+      list-style: none;
+
+      &:nth-child(2) {
+        margin-right: 0;
+      }
+    }
+  }
+}

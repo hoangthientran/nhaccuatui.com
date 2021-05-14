@@ -1,27 +1,27 @@
+// libs
 import React from "react";
+import PropTypes from "prop-types";
+// components
+import ActionInfoThumbnailVideoSmall from "../ActionInfoThumbnailVideoSmall";
+// others
 import "./style.scss";
+import AvatarMvSmall from "../AvatarMvSmall";
+import TimeMv from "../TimeMv";
 
-ThumbnailVideoSmall.propTypes = {};
+const ThumbnailVideoSmall = ({ item }) => (
+  <div className="thumbnail-video-small-wrapper">
+    <ActionInfoThumbnailVideoSmall item={item} />
+    <AvatarMvSmall item={item} />
+    <TimeMv item={item} />
+  </div>
+);
 
-function ThumbnailVideoSmall() {
-  return (
-    <div className="thumbnail-video-small">
-      <div className="action-info">
-        <div className="view-listion">
-          <span className="icon-view"></span>
-          <span className="number"> 67 </span>
-        </div>
-        <span className="icon_play"></span>
-      </div>
-      <span className="avatar">
-        <img
-          src="https://avatar-ex-swe.nixcdn.com/mv/2021/05/08/b/e/2/d/1620461530900_268.jpg"
-          alt="mother's love: mother's day songs - v.a"
-        />
-      </span>
-      <span className="icon_time_video">03:47</span>
-    </div>
-  );
-}
+ThumbnailVideoSmall.propTypes = {
+  item: PropTypes.object,
+};
+
+ThumbnailVideoSmall.defaultProps = {
+  item: {},
+};
 
 export default ThumbnailVideoSmall;

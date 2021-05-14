@@ -1,59 +1,16 @@
-import { RightOutlined } from "@ant-design/icons";
+// libs
 import React from "react";
-import VideoMvLarge from "../VideoMvLarge";
-import VideoMvSmall from "../VideoMvSmall";
-
+// components
+import ListMvHot from "../ListMvHot";
+import TitleBoxKey from "../TitleBoxKey";
+// others
 import "./style.scss";
 
-MvHot.propTypes = {};
-
-function MvHot() {
-  return (
-    <div className="mv-hot">
-      <div className="title-mv">
-        <h2>MV HOT</h2>
-        <span className="icon-right">
-          <RightOutlined />
-        </span>
-      </div>
-      <ul>
-        <li className="video-large">
-          <ul className="wrap">
-            <li className="item-mv">
-              <VideoMvLarge />
-            </li>
-            <li className="item-mv">
-              <VideoMvLarge />
-            </li>
-          </ul>
-        </li>
-        <li className="video-small">
-          <VideoMvSmall />
-        </li>
-        <li className="video-small">
-          <VideoMvSmall />
-        </li>
-        <li className="video-small">
-          <VideoMvSmall />
-        </li>
-        <li className="video-small">
-          <VideoMvSmall />
-        </li>
-        <li className="video-small">
-          <VideoMvSmall />
-        </li>
-        <li className="video-small">
-          <VideoMvSmall />
-        </li>
-        <li className="video-small">
-          <VideoMvSmall />
-        </li>
-        <li className="video-small">
-          <VideoMvSmall />
-        </li>
-      </ul>
-    </div>
-  );
-}
+const MvHot = () => (
+  <div className="mv-hot-wrapper">
+    <TitleBoxKey>MV HOT</TitleBoxKey>
+    <ListMvHot />
+  </div>
+);
 
 export default MvHot;

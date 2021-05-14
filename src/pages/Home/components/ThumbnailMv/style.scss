@@ -1,0 +1,16 @@
+.avatar-mv {
+  position: absolute;
+  z-index: 1;
+
+  width: 410px;
+  height: 230px;
+
+  .img-mv {
+    max-width: 100%;
+
+    width: 410px;
+    height: 230px;
+
+    margin-bottom: 5px;
+  }
+}
