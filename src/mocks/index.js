@@ -5,3 +5,4 @@ export * from "./Home/SongHot";
 export * from "./Home/MvHot";
 export * from "./Home/ListSong";
 export * from "./Home/Karaoke";
+export * from "./Home/ListEntertainment";
