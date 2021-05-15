@@ -1,10 +1,16 @@
+// libs
 import React from "react";
+// components
+import TitleBoxKeyCommon from "../TitleBoxKeyCommon";
+import ButtonTabSelect from "../ButtonTabSelect";
+// others
 import "./style.scss";
 
-BoxChartMusic.propTypes = {};
-
-function BoxChartMusic() {
-  return <div className="box-chart-music">Box Chart Music</div>;
-}
+const BoxChartMusic = () => (
+  <div className="box-chart-music-wrapper">
+    <TitleBoxKeyCommon>BXH BÀI HÁT</TitleBoxKeyCommon>
+    <ButtonTabSelect />
+  </div>
+);
 
 export default BoxChartMusic;
