@@ -1,10 +1,16 @@
+// libs
 import React from "react";
+// components
+import TitleBoxKey from "../TitleBoxKey";
+import ListTopic from "../ListTopic";
+// others
 import "./style.scss";
 
-BoxTopicMusic.propTypes = {};
-
-function BoxTopicMusic() {
-  return <div className="box-topic-music">Box Topic Music</div>;
-}
+const BoxTopicMusic = () => (
+  <div className="box-topic-music-wrapper">
+    <TitleBoxKey>CHỦ ĐỀ HOT</TitleBoxKey>
+    <ListTopic />
+  </div>
+);
 
 export default BoxTopicMusic;

@@ -7,3 +7,4 @@ export * from "./Home/ListSong";
 export * from "./Home/Karaoke";
 export * from "./Home/ListEntertainment";
 export * from "./Home/TrendList";
+export * from "./Home/BoxTopicMusic";
