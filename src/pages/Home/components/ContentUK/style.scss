@@ -1,0 +1,100 @@
+.list-chart-music-wrapper {
+  margin: 0;
+  padding: 0;
+
+  .number-stt-one {
+    margin-bottom: 10px;
+    padding: 0 0 10px 0;
+
+    width: 300px;
+
+    border-bottom: #f3f3f3 solid 1px;
+
+    display: grid;
+    grid-template-columns: 110px auto;
+    grid-template-rows: auto;
+
+    .img-music-top {
+      position: relative;
+
+      margin-right: 10px;
+
+      .number-one {
+        position: absolute;
+
+        left: 0;
+        bottom: 0;
+
+        margin: 66px 0 0 0;
+
+        width: 32px;
+        height: 32px;
+
+        font-size: 20px;
+        line-height: 32px;
+        text-align: center;
+        border: #e74c3c solid 1px;
+        border-radius: 3px;
+
+        background: #e74c3c;
+        color: #ffffff;
+
+      }
+
+      .thumb-top-one {
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    .name-music-top-one {
+      margin: 0;
+
+      font-size: 14px;
+      font-weight:500;
+    }
+    .name-author-top-one {
+      font-size: 13px;
+      font-weight:400;
+
+      color: #a2a2a2;
+    }
+  }
+
+  .number-stt {
+    margin-bottom: 10px;
+    padding: 0 0 10px 0;
+
+    width: 300px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    border-bottom: #f3f3f3 solid 1px;
+
+    .number {
+      width: 31px;
+      height: 31px;
+
+      font-size: 20px;
+      text-align: center;
+      color: #1abc9c;
+    }
+
+    .name-music-chart {
+      margin: 0;
+
+      font-size: 14px;
+      font-weight:500;
+    }
+    .name-singer-chart {
+      font-size: 13px;
+      font-weight:400;
+
+      margin: 0;
+
+      color: #a2a2a2;
+    }
+  }
+}

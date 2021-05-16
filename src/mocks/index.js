@@ -8,3 +8,4 @@ export * from "./Home/Karaoke";
 export * from "./Home/ListEntertainment";
 export * from "./Home/TrendList";
 export * from "./Home/BoxTopicMusic";
+export * from "./Home/BoxChartMusic";
