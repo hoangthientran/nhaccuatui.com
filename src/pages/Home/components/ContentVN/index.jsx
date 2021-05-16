@@ -11,12 +11,12 @@ import "./style.scss";
 const ContentVN = () => (
   <ul className="list-chart-music-wrapper">
     {topSongOne.map((item) => (
-      <li className="number-stt-one">
+      <li key={item.id} className="number-stt-one">
         <ImgChartMusic item={item} />
       </li>
     ))}
     {listChartMusic.map((item) => (
-      <li className="number-stt">
+      <li key={item.id} className="number-stt">
         <RankSong item={item} />
       </li>
     ))}

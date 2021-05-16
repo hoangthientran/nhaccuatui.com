@@ -1,0 +1,37 @@
+.name-music-chart {
+  margin: 0;
+
+  width: 170px;
+  line-height: 20px;
+  height: 22px;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  &:hover {
+    color: #0689ba;
+  }
+}
+
+.name-singer-mv-chart {
+  margin: 0;
+
+  font-size: 13px;
+  font-weight: 400;
+
+  cursor: pointer;
+
+  color: #a2a2a2;
+
+  &:hover {
+    color: #0689ba;
+  }
+}

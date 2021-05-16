@@ -11,20 +11,16 @@ import SongHot from "../../components/SongHot";
 // others
 import "./style.scss";
 
-BoxLeft.propTypes = {};
-
-function BoxLeft() {
-  return (
-    <div className="box-left-wrapper">
-      <SlideDefault />
-      <ListAlbum />
-      <SongHot />
-      <MvHot />
-      <ListSong />
-      <ListKaraoke />
-      <ListEntertainment />
-    </div>
-  );
-}
+const BoxLeft = () => (
+  <div className="box-left-wrapper">
+    <SlideDefault />
+    <ListAlbum />
+    <SongHot />
+    <MvHot />
+    <ListSong />
+    <ListKaraoke />
+    <ListEntertainment />
+  </div>
+);
 
 export default BoxLeft;

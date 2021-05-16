@@ -1,0 +1,22 @@
+.box-content-top-100 {
+  position: relative;
+
+  width: 300px;
+
+  border: 1px solid #0eaae5;
+  box-sizing: border-box;
+
+  .box-top-100-ul {
+    padding: 0 15px 25px 15px;
+    list-style: none;
+
+    .item-top-100 {
+      border-bottom: 1px solid #f3f3f3;
+      height: 80px;
+
+      display: grid;
+      grid-template-columns: 80px auto;
+      grid-template-rows: auto;
+    }
+  }
+}

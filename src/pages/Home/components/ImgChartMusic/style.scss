@@ -27,6 +27,7 @@
   .thumb-top-one {
     width: 100px;
     height: 100px;
+    cursor: pointer;
   }
 }
 
@@ -35,10 +36,22 @@
 
   font-size: 14px;
   font-weight: 500;
+
+  cursor: pointer;
+
+  &:hover {
+    color: #35aeee;
+  }
 }
+
 .name-author-top-one {
   font-size: 13px;
   font-weight: 400;
 
   color: #a2a2a2;
+  cursor: pointer;
+
+  &:hover {
+    color: #35aeee;
+  }
 }

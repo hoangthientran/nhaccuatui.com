@@ -1,10 +1,16 @@
+// libs
 import React from "react";
+// components
+import ButtonTabMvSelect from "../ButtonTabMvSelect";
+import TitleBoxKeyCommon from "../TitleBoxKeyCommon";
+// others
 import "./style.scss";
 
-BoxChatMv.propTypes = {};
-
-function BoxChatMv() {
-  return <div className="box-chat-mv">Box Chat Mv</div>;
-}
+const BoxChatMv = () => (
+  <div className="box-chat-mv-wrapper">
+    <TitleBoxKeyCommon>BXH MV</TitleBoxKeyCommon>
+    <ButtonTabMvSelect />
+  </div>
+);
 
 export default BoxChatMv;
