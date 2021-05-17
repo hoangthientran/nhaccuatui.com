@@ -1,6 +1,6 @@
 // libs
 import React, { useEffect, useRef, useState } from "react";
-// import classnames from "classnames";
+import classnames from "classnames";
 // dataSources
 import { listImage } from "../../../../mocks";
 // others
@@ -10,6 +10,7 @@ SlideDefault.propTypes = {};
 
 function SlideDefault() {
   // 1
+  // const [activeDefault, setActiveDefault] = useState(listImage[0].status);
   const [index, setIndex] = useState(0);
   const curentIndex = useRef(0);
 
@@ -17,26 +18,32 @@ function SlideDefault() {
   useEffect(() => {
     const loop = setInterval(() => {
       const index = curentIndex.current + 1;
-      if (index < 5 && index >= 0) {
+      if (index >= 0 && index < 5) {
         setIndex(index);
+        // setActiveDefault(listImage[index].status)
         curentIndex.current = index;
-        // console.log(curentIndex.current);
       } else {
         setIndex(0);
         curentIndex.current = 0;
       }
-    }, 2000);
+    }, 5000);
 
     return () => clearInterval(loop);
   }, [index]);
 
-  const handleHover = (index) => setIndex(index);
-
+  // const handleHover = (index) => {
+  //   setIndex(index)
+  //   // setActiveDefault(active);
+  // }
   const images = listImage.map((item, index) => (
     <img
-      onMouseOver={() => handleHover(index)}
-      onFocus={() => handleHover(index)}
-      className={`item-img ${item.id}`}
+      onMouseEnter={() => {
+        setIndex(index);
+      }}
+      className={classnames({
+        "item-img": true,
+        active: item.status === "active",
+      })}
       src={item.src}
       key={item.id}
       alt="thumnail"
