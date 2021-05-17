@@ -4,7 +4,7 @@ import React from "react";
 import "./style.scss";
 
 const BoxTxtRight = () => (
-  <p className="box-txt-right">© NCT Corp. All rights reserved</p>
+  <p className="box-txt-right-wrapper">© NCT Corp. All rights reserved</p>
 );
 
 export default BoxTxtRight;

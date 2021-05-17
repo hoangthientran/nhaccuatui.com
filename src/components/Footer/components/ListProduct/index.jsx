@@ -8,7 +8,7 @@ import { listTitleProduct } from "../../../../mocks";
 import "./style.scss";
 
 const ListProduct = () => (
-  <ul className="list-support">
+  <ul className="list-support-wrapper">
     {listTitleProduct.map((item) => (
       <li key={item.id} className="item-support">
         <ItemSupport item={item} />

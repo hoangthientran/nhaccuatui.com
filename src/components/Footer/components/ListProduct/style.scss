@@ -1,4 +1,4 @@
-.list-support {
+.list-support-wrapper {
   margin: 0;
 
   list-style: none;
@@ -11,7 +11,8 @@
 
     width: 50%;
 
-    line-height: 1.5;
     cursor: pointer;
+
+    line-height: 1.5;
   }
 }

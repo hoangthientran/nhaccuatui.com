@@ -2,13 +2,13 @@
 import React from "react";
 // components
 import NavigationOne from "../NavigationOne";
-import NavigationThree from "../NavigationThree";
 import NavigationTwo from "../NavigationTwo";
+import NavigationThree from "../NavigationThree";
 // others
 import "./style.scss";
 
 const FooterNavigation = () => (
-  <div className="footer-navigation">
+  <div className="footer-navigation-wrapper">
     <NavigationOne />
     <NavigationTwo />
     <NavigationThree />

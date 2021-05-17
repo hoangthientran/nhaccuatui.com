@@ -1,7 +1,15 @@
-.box-txt-right {
+.box-txt-right-wrapper {
   margin-top: 24px;
+  margin-left: 77px;
 
   font-size: 12px;
-  color: #fff;
   font-weight: bold;
+
+  cursor: pointer;
+
+  color: #fff;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }

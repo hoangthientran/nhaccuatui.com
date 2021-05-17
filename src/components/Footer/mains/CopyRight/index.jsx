@@ -10,7 +10,7 @@ import "./style.scss";
 
 const CopyRight = () => (
   <div className="copy-right-wrapper">
-    <div className="copy-right">
+    <div className="copy-right-inner">
       <AddressCompany />
       <MailSupport />
       <TelephoneSupport />

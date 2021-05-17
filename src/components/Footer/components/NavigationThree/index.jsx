@@ -1,13 +1,13 @@
 // libs
 import React from "react";
 // components
-import ContentTopKeyWord from "../ContentTopKeyWord";
 import NavigationTitle from "../NavigationTitle";
+import ContentTopKeyWord from "../ContentTopKeyWord";
 import TextConnect from "../TextConnect";
 import ListIcon from "../ListIcon";
+import BoxImgApp from "../BoxImgApp";
 // others
 import "./style.scss";
-import BoxImgApp from "../BoxImgApp";
 
 const NavigationThree = () => (
   <div className="navigation-three-wrapper">

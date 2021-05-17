@@ -1,13 +1,18 @@
 .icon-right {
   margin-right: 10px;
 
+  cursor: pointer;
+
   font-size: 8px;
-  color: rgba(0, 0, 0, 0.5);
+  
+  color: #00000080;
 }
 
 .item-text {
+  cursor: pointer;
+
   font-size: 12px;
-  color: rgba(0, 0, 0, 0.5);
+  color: #00000080;
 
   &:hover {
     color: #0689ba;

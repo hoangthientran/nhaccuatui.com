@@ -8,7 +8,7 @@ import { listSupport } from "../../../../mocks";
 import "./style.scss";
 
 const ListSupport = () => (
-  <ul className="list-support">
+  <ul className="list-support-wrapper">
     {listSupport.map((item) => (
       <li key={item.id} className="item-support">
         <ItemSupport item={item} />

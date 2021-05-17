@@ -1,6 +1,6 @@
 $width: calc(100% / 3);
 
-.footer-navigation {
+.footer-navigation-wrapper {
   display: grid;
   grid-template-columns: $width $width $width;
   grid-template-rows: auto;
