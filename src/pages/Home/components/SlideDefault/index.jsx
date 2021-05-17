@@ -6,11 +6,9 @@ import { listImage } from "../../../../mocks";
 // others
 import "./style.scss";
 
-SlideDefault.propTypes = {};
-
-function SlideDefault() {
+const SlideDefault = () => {
   // 1
-  // const [activeDefault, setActiveDefault] = useState(listImage[0].status);
+  const [activeDefault, setActiveDefault] = useState(listImage[0].status);
   const [index, setIndex] = useState(0);
   const curentIndex = useRef(0);
 
@@ -20,29 +18,27 @@ function SlideDefault() {
       const index = curentIndex.current + 1;
       if (index >= 0 && index < 5) {
         setIndex(index);
-        // setActiveDefault(listImage[index].status)
+        setActiveDefault(listImage[index].src);
         curentIndex.current = index;
       } else {
         setIndex(0);
         curentIndex.current = 0;
+        setActiveDefault(listImage[0].src);
       }
-    }, 5000);
+    }, 2000);
 
     return () => clearInterval(loop);
   }, [index]);
 
-  // const handleHover = (index) => {
-  //   setIndex(index)
-  //   // setActiveDefault(active);
-  // }
   const images = listImage.map((item, index) => (
     <img
       onMouseEnter={() => {
         setIndex(index);
+        setActiveDefault(item.src);
       }}
       className={classnames({
         "item-img": true,
-        active: item.status === "active",
+        active: activeDefault === item.src,
       })}
       src={item.src}
       key={item.id}
@@ -59,6 +55,6 @@ function SlideDefault() {
       </div>
     </div>
   );
-}
+};
 
 export default SlideDefault;
