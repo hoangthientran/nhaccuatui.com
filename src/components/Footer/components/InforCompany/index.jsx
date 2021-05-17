@@ -1,10 +1,20 @@
+// libs
 import React from "react";
+// components
+import ImgCompany from "../ImgCompany";
+import ContentCompany from "../ContentCompany";
+import ImgNotification from "../ImgNotification";
+import ImgPermission from "../ImgPermission";
+// others
 import "./style.scss";
 
-InfoComponents.propTypes = {};
+const InforCompany = () => (
+  <div className="info-components-wrapper">
+    <ImgCompany />
+    <ContentCompany />
+    <ImgNotification />
+    <ImgPermission />
+  </div>
+);
 
-function InfoComponents() {
-  return <div className="info-components">Công ty cổ phần NCT</div>;
-}
-
-export default InfoComponents;
+export default InforCompany;

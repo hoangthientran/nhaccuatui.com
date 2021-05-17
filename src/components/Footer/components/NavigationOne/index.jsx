@@ -1,10 +1,16 @@
+// libs
 import React from "react";
+// components
+import NavigationTitle from "../NavigationTitle";
+import ListSupport from "../ListSupport";
+// others
 import "./style.scss";
 
-NavigationOne.propTypes = {};
-
-function NavigationOne() {
-  return <div className="navigation">Hỗ trợ</div>;
-}
+const NavigationOne = () => (
+  <div className="navigation-one-wrapper">
+    <NavigationTitle>Hỗ trợ</NavigationTitle>
+    <ListSupport />
+  </div>
+);
 
 export default NavigationOne;

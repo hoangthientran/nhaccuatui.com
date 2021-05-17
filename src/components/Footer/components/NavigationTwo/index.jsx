@@ -1,10 +1,16 @@
+// libs
 import React from "react";
+// components
+import NavigationTitle from "../NavigationTitle";
+import ListProduct from "../ListProduct";
+// others
 import "./style.scss";
 
-NavigationTwo.propTypes = {};
-
-function NavigationTwo() {
-  return <div className="navigation">Sản phẩm khác</div>;
-}
+const NavigationTwo = () => (
+  <div className="navigation-two-wrapper">
+    <NavigationTitle>Sản phẩm khác</NavigationTitle>
+    <ListProduct />
+  </div>
+);
 
 export default NavigationTwo;

@@ -1,5 +1,9 @@
+$width: calc(100% / 3);
+
 .footer-navigation {
-  display: flex;
+  display: grid;
+  grid-template-columns: $width $width $width;
+  grid-template-rows: auto;
 
   width: 100%;
 }
