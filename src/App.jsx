@@ -1,31 +1,31 @@
 // libs
 import React from "react";
-import { Route, Switch, Redirect } from "react-router-dom";
-// components
-import Header from "./components/Header";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import NotFound from "./components/NotFound";
-import Footer from "./components/Footer";
 // other
 import "./App.css";
+// components
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import AppRoute from "./router/appRoute";
+// import Home from "./pages/Home";
+// import About from "./pages/About";
+// import { routes } from "./Router/AppRoute";
+// import NotFound from "./components/NotFound";
+// router
+// import routes from "./router/appRoute";
 
 function App() {
   return (
     <div>
       <Header />
-      <Switch>
-        <Redirect from="/nhaccuatui.com" to="/" exact />
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route exact path="/about">
-          <About />
-        </Route>
-        <Route>
-          <NotFound />
-        </Route>
-      </Switch>
+      <AppRoute />
+      {/* <Switch>
+          <Redirect from="/nhaccuatui.com" to="/" exact />
+          {
+            routes.map((item) => (
+              <Route path={item.path} component={item.component} exact />
+            ))
+          }
+        </Switch> */}
       <Footer />
     </div>
   );
