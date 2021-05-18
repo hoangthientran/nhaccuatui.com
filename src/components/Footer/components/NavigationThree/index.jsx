@@ -11,7 +11,7 @@ import "./style.scss";
 
 const NavigationThree = () => (
   <div className="navigation-three-wrapper">
-    <NavigationTitle>TOP TỪ KHÓA</NavigationTitle>
+    <NavigationTitle title="TOP TỪ KHÓA"></NavigationTitle>
     <ContentTopKeyWord />
     <TextConnect />
     <ListIcon />

@@ -8,7 +8,7 @@ import "./style.scss";
 
 const NavigationTwo = () => (
   <div className="navigation-two-wrapper">
-    <NavigationTitle>Sản phẩm khác</NavigationTitle>
+    <NavigationTitle title="Sản phẩm khác"></NavigationTitle>
     <ListProduct />
   </div>
 );

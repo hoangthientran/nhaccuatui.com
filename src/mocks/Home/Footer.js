@@ -93,3 +93,43 @@ export const listImageApp = [
     src: "https://stc-id.nixcdn.com/v11/images/footer/t_appgallery.png",
   },
 ];
+
+export const contentCompany = [
+  {
+    id: 1,
+    name: "Chủ sở hữu website: Ông Nhan Thế Luân",
+  },
+  {
+    id: 2,
+    name:
+      "Giấy phép MXH số 499/GP-BTTTT do Bộ Thông Tin và Truyền thông cấp ngày 28/09/2015.",
+  },
+  {
+    id: 3,
+    name:
+      "Giấy Chứng nhận Đăng ký Kinh doanh số 0305535715 do Sở kế hoạch và Đầu tư thành phố Hồ Chí Minh cấp ngày 01/03/2008.",
+  },
+];
+
+export const contentTopKeyWord = [
+  {
+    id: 1,
+    name: "Muộn Rồi Mà Sao Còn,",
+  },
+  {
+    id: 2,
+    name: "Sài Gòn Đau Lòng Quá,",
+  },
+  {
+    id: 3,
+    name: "Thưởng thức nỗi buồn,",
+  },
+  {
+    id: 4,
+    name: "Laylalay,",
+  },
+  {
+    id: 5,
+    name: "Một Cái Tên",
+  },
+];

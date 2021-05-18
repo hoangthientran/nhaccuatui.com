@@ -1,16 +1,17 @@
 // libs
 import React from "react";
-import ContentKeyword from "../ContentKeyword";
+// components
+import { contentTopKeyWord } from "../../../../mocks";
 // others
 import "./style.scss";
 
 const ContentTopKeyWord = () => (
   <div className="content-top-keyword-wrapper">
-    <ContentKeyword>Muộn Rồi Mà Sao Còn,</ContentKeyword>
-    <ContentKeyword>&nbsp;Sài Gòn Đau Lòng Quá, </ContentKeyword>
-    <ContentKeyword>&nbsp; Thưởng thức nỗi buồn, </ContentKeyword>
-    <ContentKeyword> Laylalay, </ContentKeyword>
-    <ContentKeyword>&nbsp; Một Cái Tên</ContentKeyword>
+    {contentTopKeyWord.map((item) => (
+      <span key={item.id} className="content-keyword">
+        {item.name}
+      </span>
+    ))}
   </div>
 );
 export default ContentTopKeyWord;

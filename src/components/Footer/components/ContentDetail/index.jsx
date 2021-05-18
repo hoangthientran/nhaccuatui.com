@@ -3,6 +3,6 @@ import React from "react";
 // others
 import "./style.scss";
 
-const ContentDetail = (props) => <p className="t-detail">{props.children}</p>;
+const ContentDetail = ({ title }) => <p className="t-detail">{title}</p>;
 
 export default ContentDetail;

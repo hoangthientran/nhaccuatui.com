@@ -8,7 +8,7 @@ import "./style.scss";
 
 const NavigationOne = () => (
   <div className="navigation-one-wrapper">
-    <NavigationTitle>Hỗ trợ</NavigationTitle>
+    <NavigationTitle title="Hỗ trợ"></NavigationTitle>
     <ListSupport />
   </div>
 );
