@@ -133,3 +133,66 @@ export const contentTopKeyWord = [
     name: "Một Cái Tên",
   },
 ];
+
+export const cooperationList = [
+  {
+    id: "1",
+    src: "https://stc-id.nixcdn.com/v11/images/footer/1-new.png",
+  },
+  {
+    id: "2",
+    src: "https://stc-id.nixcdn.com/v11/images/footer/2-new.png",
+  },
+  {
+    id: "3",
+    src: "https://stc-id.nixcdn.com/v11/images/footer/17.png",
+  },
+  {
+    id: "4",
+    src: "https://stc-id.nixcdn.com/v11/images/footer/13.png",
+  },
+  {
+    id: "5",
+    src: "https://stc-id.nixcdn.com/v11/images/footer/12.png",
+  },
+  {
+    id: "6",
+    src: "https://stc-id.nixcdn.com/v11/images/footer/14.png",
+  },
+  {
+    id: "7",
+    src: "https://stc-id.nixcdn.com/v11/images/footer/15.png",
+  },
+  {
+    id: "8",
+    src: "https://stc-id.nixcdn.com/v11/images/footer/3-new.png",
+  },
+  {
+    id: "9",
+    src: "https://stc-id.nixcdn.com/v11/images/footer/10.png",
+  },
+  {
+    id: "10",
+    src: "https://stc-id.nixcdn.com/v11/images/footer/14.png",
+  },
+  {
+    id: "11",
+    src: "https://stc-id.nixcdn.com/v11/images/footer/1-new.png",
+  },
+  {
+    id: "12",
+    src: "https://stc-id.nixcdn.com/v11/images/footer/2-new.png",
+  },
+  {
+    id: "13",
+    src: "https://stc-id.nixcdn.com/v11/images/footer/17.png",
+  },
+  {
+    id: "14",
+    src: "https://stc-id.nixcdn.com/v11/images/footer/13.png",
+  },
+  {
+    id: "19",
+    src: "https://stc-id.nixcdn.com/v11/images/footer/12.png",
+  },
+];

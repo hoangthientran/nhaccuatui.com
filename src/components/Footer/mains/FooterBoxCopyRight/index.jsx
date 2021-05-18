@@ -8,7 +8,7 @@ import BoxTxtRight from "../../components/BoxTxtRight";
 // others
 import "./style.scss";
 
-const CopyRight = () => (
+const FooterBoxCopyRight = () => (
   <div className="copy-right-wrapper">
     <div className="copy-right-inner">
       <AddressCompany />
@@ -19,4 +19,4 @@ const CopyRight = () => (
   </div>
 );
 
-export default CopyRight;
+export default FooterBoxCopyRight;
