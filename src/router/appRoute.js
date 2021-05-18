@@ -1,23 +1,22 @@
-// libs
-import React from "react";
-import {
-  BrowserRouter as Router,
-  Redirect,
-  Route,
-  Switch,
-} from "react-router-dom";
-// constants
-import { ROUTES } from "../constant/router";
+// components
+import Home from "../pages/Home";
+import About from "../pages/About";
+import NotFound from "../components/NotFound";
 
-const AppRoute = () => (
-  <Router>
-    <Switch>
-      <Redirect from="/nhaccuatui.com" to="/" exact />
-      {ROUTES.map((item) => (
-        <Route path={item.path} component={item.component} exact />
-      ))}
-    </Switch>
-  </Router>
-);
-
-export default AppRoute;
+export const ROUTES = [
+  {
+    id: 1,
+    path: "/",
+    component: Home,
+  },
+  {
+    id: 2,
+    path: "/about",
+    component: About,
+  },
+  {
+    id: 3,
+    path: "",
+    component: NotFound,
+  },
+];

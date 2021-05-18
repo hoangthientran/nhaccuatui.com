@@ -1,31 +1,31 @@
 // libs
 import React from "react";
-// other
-import "./App.css";
+import {
+  BrowserRouter as Router,
+  Redirect,
+  Route,
+  Switch,
+} from "react-router-dom";
 // components
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import AppRoute from "./router/appRoute";
-// import Home from "./pages/Home";
-// import About from "./pages/About";
-// import { routes } from "./Router/AppRoute";
-// import NotFound from "./components/NotFound";
 // router
-// import routes from "./router/appRoute";
+import { ROUTES } from "./router/appRoute";
+// other
+import "./App.css";
 
 function App() {
   return (
     <div>
       <Header />
-      <AppRoute />
-      {/* <Switch>
+      <Router>
+        <Switch>
           <Redirect from="/nhaccuatui.com" to="/" exact />
-          {
-            routes.map((item) => (
-              <Route path={item.path} component={item.component} exact />
-            ))
-          }
-        </Switch> */}
+          {ROUTES.map((item) => (
+            <Route path={item.path} component={item.component} exact />
+          ))}
+        </Switch>
+      </Router>
       <Footer />
     </div>
   );

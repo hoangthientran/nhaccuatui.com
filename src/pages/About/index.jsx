@@ -4,7 +4,7 @@ import React from "react";
 import "./style.scss";
 
 const About = () => (
-  <div className="box-about-wrapper">
+  <div className="about-wrapper">
     <h1>ABOUT</h1>
   </div>
 );
