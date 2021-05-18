@@ -15,7 +15,7 @@ function App() {
     <div>
       <Header />
       <Switch>
-        <Redirect from="/home" to="/" exact />
+        <Redirect from="/nhaccuatui.com" to="/" exact />
         <Route exact path="/">
           <Home />
         </Route>
