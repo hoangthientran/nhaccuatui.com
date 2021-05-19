@@ -10,7 +10,7 @@ import {
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 // router
-import { ROUTES } from "./router/appRoute";
+import { routes } from "./router/appRoutes";
 // other
 import "./App.css";
 
@@ -21,8 +21,13 @@ function App() {
       <Router>
         <Switch>
           <Redirect from="/nhaccuatui.com" to="/" exact />
-          {ROUTES.map((item) => (
-            <Route path={item.path} component={item.component} exact />
+          {routes.map((item) => (
+            <Route
+              key={item.id}
+              path={item.path}
+              component={item.component}
+              exact
+            />
           ))}
         </Switch>
       </Router>

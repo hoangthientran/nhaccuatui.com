@@ -3,7 +3,7 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import NotFound from "../components/NotFound";
 
-export const ROUTES = [
+export const routes = [
   {
     id: 1,
     path: "/",
@@ -16,7 +16,6 @@ export const ROUTES = [
   },
   {
     id: 3,
-    path: "",
     component: NotFound,
   },
 ];
