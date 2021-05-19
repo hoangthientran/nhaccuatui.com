@@ -1,10 +1,8 @@
 // libs
 import React from "react";
-
 // components
 import FormSearch from "../../components/FormSearch";
 import SuggestionDropdown from "../../components/SuggestionDropdown";
-
 // others
 import "./style.scss";
 

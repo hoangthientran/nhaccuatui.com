@@ -2,7 +2,7 @@ import axios from "axios";
 
 // set up axiosClient
 const axiosClient = axios.create({
-  baseUrl: "https://api.ezfrontend.com/",
+  baseUrl: "https://apizing.herokuapp.com/",
   headers: {
     "Content-Type": "application/json",
   },

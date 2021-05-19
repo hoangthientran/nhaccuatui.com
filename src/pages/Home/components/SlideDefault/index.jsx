@@ -25,7 +25,7 @@ const SlideDefault = () => {
         curentIndex.current = 0;
         setActiveDefault(listImage[0].src);
       }
-    }, 2000);
+    }, 6000);
 
     return () => clearInterval(loop);
   }, [index]);

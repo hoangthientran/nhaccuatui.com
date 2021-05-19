@@ -1,23 +1,25 @@
 // libs
 import React, { useEffect } from "react";
+// others
+import "./App.css";
+import Footer from "./components/Footer";
 // components
 import Header from "./components/Header";
 import Home from "./pages/Home";
-import Footer from "./components/Footer";
-// others
-import "./App.css";
-import categoryApi from "./api/categoryApi";
+import playlistApi from "./api/playlistApi";
 
 function App() {
   useEffect(() => {
     const fecthTitleHeader = async () => {
-      const categories = await categoryApi.getAll();
-      console.log(categories);
+      try {
+        const playlist = await playlistApi.getAll();
+        console.log(playlist);
+      } catch (error) {
+        console.log("Failed to fetch data:", error);
+      }
     };
-
     fecthTitleHeader();
   }, []);
-
   return (
     <div>
       <Header />
