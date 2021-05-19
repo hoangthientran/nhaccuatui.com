@@ -10,8 +10,8 @@ Home.propTypes = {};
 
 function Home() {
   return (
-    <div className="box-content-wrapper">
-      <div className="box-content-wrapper-inner">
+    <div className="home-wrapper">
+      <div className="home-wrapper-inner">
         <BoxLeft />
         <BoxRight />
       </div>
