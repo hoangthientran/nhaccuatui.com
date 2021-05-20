@@ -1,30 +1,30 @@
 import axiosClient from "./axiosClient";
 
-const playlistApi = {
+const titleHeaderApi = {
   getAll(params) {
-    const url = "/getplaylist";
+    const url = "/titleHeaders";
     return axiosClient.get(url, { params });
   },
 
   get(id) {
-    const url = `/getplaylist/${id}`;
+    const url = `/titleHeaders/${id}`;
     return axiosClient.get(url);
   },
 
   add(data) {
-    const url = "/getplaylist";
+    const url = "/titleHeaders";
     return axiosClient.post(url, data);
   },
 
   update(data) {
-    const url = `/getplaylist/${data.id}`;
+    const url = `/titleHeaders/${data.id}`;
     return axiosClient.patch(url, data);
   },
 
   remove(id) {
-    const url = `/getplaylist/${id}`;
+    const url = `/titleHeaders/${id}`;
     return axiosClient.delete(url);
   },
 };
 
-export default playlistApi;
+export default titleHeaderApi;

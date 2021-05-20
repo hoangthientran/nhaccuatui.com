@@ -1,0 +1,17 @@
+.item-title {
+  margin-top: 10px;
+
+  .name-country {
+    font-size: 14px;
+    color: #000000;
+    line-height: 42px;
+    font-weight: bold;
+  }
+
+  &:hover {
+    color: #2daaed;
+  }
+  &:hover .name-country {
+    color: #2daaed;
+  }
+}

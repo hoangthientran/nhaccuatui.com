@@ -11,3 +11,4 @@ export * from "./Home/BoxTopicMusic";
 export * from "./Home/BoxChartMusic";
 export * from "./Home/BoxChartMvMusic";
 export * from "./Home/Top100";
+export * from "./Home/Header";
