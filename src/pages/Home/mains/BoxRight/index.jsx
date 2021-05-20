@@ -1,8 +1,8 @@
 // libs
 import React from "react";
 // components
-// import BoxChartMusic from "../../components/BoxChartMusic";
-// import BoxChatMv from "../../components/BoxChatMv";
+import BoxChartMusic from "../../components/BoxChartMusic";
+import BoxChatMv from "../../components/BoxChatMv";
 import BoxTopicMusic from "../../components/BoxTopicMusic";
 import Recomment from "../../components/Recomment";
 import Top100 from "../../components/Top100";
@@ -16,8 +16,8 @@ const BoxRight = () => (
     <TrendList />
     <Recomment />
     <BoxTopicMusic />
-    {/* <BoxChartMusic />
-    <BoxChatMv /> */}
+    <BoxChartMusic />
+    <BoxChatMv />
     <Top100Img />
     <Top100 />
   </div>

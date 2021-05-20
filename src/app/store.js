@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-// import userReducer from "../features/Auth/userSlice";
+import songReducer from "../pages/Home/components/ListSongToday/listSongSlice";
 
 const rootReducer = {
-  //   user: userReducer,
+  song: songReducer,
 };
 
 // setup redux store

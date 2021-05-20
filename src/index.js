@@ -9,13 +9,14 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 // others
 import "./index.css";
+import Multilang from "./context/multilang";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Multilang>
     <Provider store={store}>
       <App />
     </Provider>
-  </React.StrictMode>,
+  </Multilang>,
   document.getElementById("root")
 );
 
