@@ -7,9 +7,10 @@ import store from "./app/store";
 import App from "./App";
 // import store from "./app/store";
 import reportWebVitals from "./reportWebVitals";
+// contexts
+import Multilang from "./context/multilang";
 // others
 import "./index.css";
-import Multilang from "./context/multilang";
 
 ReactDOM.render(
   <Multilang>

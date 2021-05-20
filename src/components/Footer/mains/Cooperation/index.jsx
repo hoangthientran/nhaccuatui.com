@@ -6,7 +6,7 @@ Cooperation.propTypes = {};
 function Cooperation() {
   return (
     <div className="footer-cooperation">
-      <div className="footer-container">Liên kết và hợp tác</div>
+      <div className="footer-container"></div>
     </div>
   );
 }
