@@ -14,26 +14,24 @@ import { routes } from "./router/appRoutes";
 // other
 import "./App.css";
 
-function App() {
-  return (
-    <div>
-      <Header />
-      <Router>
-        <Switch>
-          <Redirect from="/nhaccuatui.com" to="/" exact />
-          {routes.map((item) => (
-            <Route
-              key={item.id}
-              path={item.path}
-              component={item.component}
-              exact
-            />
-          ))}
-        </Switch>
-      </Router>
-      <Footer />
-    </div>
-  );
-}
+const App = () => (
+  <div>
+    <Header />
+    <Router>
+      <Switch>
+        <Redirect from="/nhaccuatui.com" to="/" exact />
+        {routes.map((item) => (
+          <Route
+            key={item.id}
+            path={item.path}
+            component={item.component}
+            exact
+          />
+        ))}
+      </Switch>
+    </Router>
+    <Footer />
+  </div>
+);
 
 export default App;

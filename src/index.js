@@ -1,6 +1,9 @@
+// libs
 import React from "react";
 import ReactDOM from "react-dom";
+// components
 import App from "./App";
+// others
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
