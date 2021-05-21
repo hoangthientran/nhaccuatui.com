@@ -6,15 +6,11 @@ import ListSongToday from "../ListSongToday";
 // others
 import "./style.scss";
 
-ListAlbum.propTypes = {};
-
-function ListAlbum() {
-  return (
-    <div className="list-album-wrapper">
-      <TitleBoxKey>NGHE GÌ HÔM NAY</TitleBoxKey>
-      <ListSongToday />
-    </div>
-  );
-}
+const ListAlbum = ({ defaultLanguage }) => (
+  <div className="list-album-wrapper">
+    <TitleBoxKey nameLanguage={defaultLanguage.ListenToday} />
+    <ListSongToday />
+  </div>
+);
 
 export default ListAlbum;

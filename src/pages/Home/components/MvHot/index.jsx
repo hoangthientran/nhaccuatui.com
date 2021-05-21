@@ -6,9 +6,9 @@ import TitleBoxKey from "../TitleBoxKey";
 // others
 import "./style.scss";
 
-const MvHot = () => (
+const MvHot = ({ defaultLanguage }) => (
   <div className="mv-hot-wrapper">
-    <TitleBoxKey>MV HOT</TitleBoxKey>
+    <TitleBoxKey nameLanguage={defaultLanguage.MVHOT}>MV HOT</TitleBoxKey>
     <ListMvHot />
   </div>
 );

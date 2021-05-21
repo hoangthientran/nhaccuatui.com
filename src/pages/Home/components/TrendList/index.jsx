@@ -1,13 +1,14 @@
 // libs
 import React, { useEffect, useRef, useState } from "react";
 import classnames from "classnames";
-// dataSources
+// mocks
 import { listTrend } from "../../../../mocks";
 // others
 import "./style.scss";
 
 const TrendList = () => {
   // 1
+  const [activeDefault, setActiveDefault] = useState(listTrend[0].status);
   const [index, setIndex] = useState(0);
   const curentIndex = useRef(0);
 
@@ -16,17 +17,17 @@ const TrendList = () => {
       const index = curentIndex.current + 1;
       if (index < 5 && index >= 0) {
         setIndex(index);
+        setActiveDefault(listTrend[index].src);
         curentIndex.current = index;
       } else {
         setIndex(0);
+        setActiveDefault(listTrend[0].src);
         curentIndex.current = 0;
       }
-    }, 4000);
+    }, 6000);
 
     return () => clearInterval(loop);
   }, [index]);
-
-  const handleHover = (index) => setIndex(index);
 
   return (
     <div className="trend-artist-wrapper">
@@ -44,11 +45,13 @@ const TrendList = () => {
           {listTrend.map((item, index) => (
             <li className="trend-dot-circle" key={item.id}>
               <img
-                onMouseOver={() => handleHover(index)}
-                onFocus={() => handleHover(index)}
+                onMouseEnter={() => {
+                  setIndex(index);
+                  setActiveDefault(item.src);
+                }}
                 className={classnames({
                   "img-dot": true,
-                  active: item.status === "active",
+                  active: activeDefault === item.src,
                 })}
                 // className="img-dot"
                 src={item.src}

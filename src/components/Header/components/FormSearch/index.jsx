@@ -1,27 +1,20 @@
 // libs
 import React from "react";
-import { SearchOutlined } from "@ant-design/icons";
-
+// components
+import IconFormSearch from "../InconFormSearch";
+import InputFormSearch from "../InputFormSearch";
+import SuggestionDropdown from "../SuggestionDropdown";
 // others
 import "./style.scss";
 
-FormSearch.propTypes = {};
-
-function FormSearch() {
-  return (
-    <form>
-      <div className="box-search__action">
-        <span className="icon-search">
-          <SearchOutlined />
-        </span>
-        <input
-          type="text"
-          className="input-search"
-          placeholder="Tìm bài hát, video, playlist, ca sĩ"
-        />
-      </div>
-    </form>
-  );
-}
+const FormSearch = () => (
+  <form>
+    <div className="form-search-wrapper">
+      <IconFormSearch />
+      <InputFormSearch />
+      <SuggestionDropdown />
+    </div>
+  </form>
+);
 
 export default FormSearch;

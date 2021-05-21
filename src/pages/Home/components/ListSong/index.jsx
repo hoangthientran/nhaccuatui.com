@@ -6,9 +6,9 @@ import TitleBoxKey from "../TitleBoxKey";
 // others
 import "./style.scss";
 
-const ListSong = () => (
+const ListSong = ({ defaultLanguage }) => (
   <div className="list-song-wrapper">
-    <TitleBoxKey>BÀI HÁT</TitleBoxKey>
+    <TitleBoxKey nameLanguage={defaultLanguage.SONG}>BÀI HÁT</TitleBoxKey>
     <ItemSongs />
   </div>
 );

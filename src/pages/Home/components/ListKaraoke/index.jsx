@@ -6,9 +6,9 @@ import TitleBoxKey from "../TitleBoxKey";
 // others
 import "./style.scss";
 
-const ListKaraoke = () => (
+const ListKaraoke = ({ defaultLanguage }) => (
   <div className="list-karaoke-wrapper">
-    <TitleBoxKey>KARAOKE</TitleBoxKey>
+    <TitleBoxKey nameLanguage={defaultLanguage.KARAOKE}>KARAOKE</TitleBoxKey>
     <BoxKaraoke />
   </div>
 );

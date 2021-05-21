@@ -1,0 +1,17 @@
+.header-menu-top-wrapper {
+  width: 100%;
+  
+  .menu-top-inner {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto;
+
+    margin: 0;
+    padding-left: 0;
+
+    width: auto;
+
+    align-items: center;
+    list-style: none;
+  }
+}

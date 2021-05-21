@@ -1,16 +1,23 @@
 // libs
 import React from "react";
 import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import store from "./app/store";
 // components
 import App from "./App";
+// import store from "./app/store";
+import reportWebVitals from "./reportWebVitals";
+// contexts
+import Multilang from "./context/multilang";
 // others
 import "./index.css";
-import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Multilang>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </Multilang>,
   document.getElementById("root")
 );
 

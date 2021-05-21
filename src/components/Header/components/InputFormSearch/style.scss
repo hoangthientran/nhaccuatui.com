@@ -1,0 +1,18 @@
+.input-search {
+  position: absolute;
+  left: 40px;
+
+  &:focus ~ .suggestion-wrapper {
+    display: block;
+  }
+
+  height: 32px;
+  width: 180px;
+
+  font-size: 12px;
+
+  outline: none;
+  border: none;
+  background: transparent;
+  border-color: none;
+}

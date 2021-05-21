@@ -1,7 +1,7 @@
 // libs
 import React, { useEffect, useRef, useState } from "react";
 import classnames from "classnames";
-// dataSources
+// mocks
 import { listImage } from "../../../../mocks";
 // others
 import "./style.scss";
@@ -22,10 +22,10 @@ const SlideDefault = () => {
         curentIndex.current = index;
       } else {
         setIndex(0);
-        curentIndex.current = 0;
         setActiveDefault(listImage[0].src);
+        curentIndex.current = 0;
       }
-    }, 2000);
+    }, 7000);
 
     return () => clearInterval(loop);
   }, [index]);

@@ -1,0 +1,23 @@
+.item {
+  position: relative;
+  margin-bottom: 5px;
+
+  padding: 1px 16px 0 0;
+
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 400;
+  color: #222222;
+
+  .text-title {
+    font-weight: 400;
+  }
+
+  &:hover .text-title {
+    color: #2daaed;
+  }
+}
+
+.item--song:hover .menu-song-dropdown-wrapper {
+  display: block;
+}

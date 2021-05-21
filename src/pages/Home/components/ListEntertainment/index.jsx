@@ -6,9 +6,11 @@ import TitleBoxKey from "../TitleBoxKey";
 // others
 import "./style.scss";
 
-const ListEntertainment = () => (
+const ListEntertainment = ({ defaultLanguage }) => (
   <div className="list-entertainment-wrapper">
-    <TitleBoxKey>GIẢI TRÍ</TitleBoxKey>
+    <TitleBoxKey nameLanguage={defaultLanguage.ENTERTAINMENT}>
+      GIẢI TRÍ
+    </TitleBoxKey>
     <BoxEntertainment />
   </div>
 );
