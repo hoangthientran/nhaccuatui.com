@@ -2,14 +2,14 @@
 import React from "react";
 // components
 import TitleBoxKeyCommon from "../TitleBoxKeyCommon";
-import ButtonTabSelect from "../ButtonTabSelect";
+import ButtonTabSongSelect from "../ButtonTabSongSelect";
 // others
 import "./style.scss";
 
-const BoxChartMusic = () => (
-  <div className="box-chart-music-wrapper">
-    <TitleBoxKeyCommon>BXH BÀI HÁT</TitleBoxKeyCommon>
-    <ButtonTabSelect />
+const BoxChartMusic = ({ defaultLanguage }) => (
+  <div className="chart-music-wrapper">
+    <TitleBoxKeyCommon nameLanguage={defaultLanguage.BXHSONG} />
+    <ButtonTabSongSelect />
   </div>
 );
 

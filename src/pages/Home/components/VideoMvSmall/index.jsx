@@ -10,7 +10,7 @@ import "./style.scss";
 
 const VideoMvSmall = () =>
   listContentSmallMvHot.map((item) => (
-    <div className="video-small-wrapper" key={item.id}>
+    <div className="video-mv-small-wrapper" key={item.id}>
       <ThumbnailVideoSmall item={item} />
       <InfoNameMvThumbnailSmall item={item} />
     </div>

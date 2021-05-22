@@ -1,14 +1,12 @@
-.avatar {
+.thumnail-song-today-wrapper {
   position: absolute;
   z-index: 1;
 
   width: 152px;
   height: 152px;
 
-  .avatar-img {
+  .thumb-avatar-img {
     width: 152px;
     height: 152px;
-
-    max-width: 100%;
   }
 }

@@ -11,14 +11,12 @@ import "./style.scss";
 
 const { TabPane } = Tabs;
 
-const ButtonTabSelect = () => {
-  const [state] = useState({
-    tabPosition: "top",
-  });
+const ButtonTabSongSelect = () => {
+  const [state] = useState({ tabPosition: "top" });
   const { tabPosition } = state;
 
   return (
-    <div className="btn-tab-select-wrapper">
+    <div className="button-tab-song-select-wrapper">
       <Tabs tabPosition={tabPosition}>
         <TabPane tab="Việt Nam" key="1">
           <ContentVN />
@@ -34,4 +32,4 @@ const ButtonTabSelect = () => {
   );
 };
 
-export default ButtonTabSelect;
+export default ButtonTabSongSelect;

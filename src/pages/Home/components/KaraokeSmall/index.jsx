@@ -3,8 +3,8 @@ import React from "react";
 // components
 import ThumbnailKaraoke from "../ThumbnailKaraoke";
 import InfoNameKaraokeThumbnailSmall from "../InfoNameKaraokeThumbnailSmall";
-// dataSources
-import { listKaraoke } from "../../../../mocks/Home/Karaoke";
+// mocks
+import { listKaraoke } from "../../../../mocks";
 // others
 import "./style.scss";
 

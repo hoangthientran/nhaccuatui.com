@@ -6,7 +6,7 @@ import ItemKaraoke from "../ItemKaraoke";
 import "./style.scss";
 
 const BoxKaraoke = () => (
-  <ul className="box-karaoke-wrapper">
+  <ul className="karaoke-list-wrapper">
     <ItemKaraoke />
   </ul>
 );

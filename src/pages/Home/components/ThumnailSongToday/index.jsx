@@ -5,12 +5,8 @@ import PropTypes from "prop-types";
 import "./style.scss";
 
 const ThumnailSongToday = ({ item }) => (
-  <span className="avatar">
-    <img
-      className="avatar-img"
-      src={item.src_main}
-      alt="mother's love: mother's day songs - v.a"
-    />
+  <span className="thumnail-song-today-wrapper">
+    <img className="thumb-avatar-img" src={item.src_main} alt="img" />
   </span>
 );
 

@@ -3,10 +3,10 @@ import React from "react";
 import PropTypes from "prop-types";
 // components
 import ActionInfoThumbnailKaraoke from "../ActionInfoThumbnailKaraoke";
-// others
-import "./style.scss";
 import AvatarKaraoke from "../AvatarKaraoke";
 import TimeKaraoke from "../TimeKaraoke";
+// others
+import "./style.scss";
 
 const ThumbnailKaraoke = ({ item }) => (
   <div className="thumbnail-karaoke-wrapper">

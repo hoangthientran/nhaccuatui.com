@@ -6,17 +6,16 @@
 
   list-style: none;
 
-  .mv-large-wrapper {
+  .mv-large-inner {
     display: flex;
 
     width: 840px;
 
     .item-mv-large {
-      padding: 0px;
       margin-right: 20px;
+      padding: 0px;
 
       width: 410px;
-
       list-style: none;
 
       &:nth-child(2) {

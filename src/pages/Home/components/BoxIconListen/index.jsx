@@ -2,8 +2,8 @@
 import React from "react";
 import { CustomerServiceOutlined } from "@ant-design/icons";
 import PropTypes from "prop-types";
-// dataSources
-import { formatNumber } from "../../../../mocks";
+// constants
+import { formatNumber } from "../../../../constants";
 // others
 import "./style.scss";
 

@@ -5,7 +5,7 @@ import "./style.scss";
 
 const TextBuyVip = () => (
   <div className="text-buy-vip-wrapper">
-    <p className="txt-vip">Mua VIP</p>
+    <p className="txt-vip">LANGUAGE</p>
   </div>
 );
 

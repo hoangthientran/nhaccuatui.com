@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import "./style.scss";
 
 const NameMvLarge = ({ item }) => (
-  <div className="name-mv-large">
+  <div className="name-mv-large-wrapper">
     <h3 className="name-mv">{item.name_mv}</h3>
     <h4 className="name-author">{item.name_author}</h4>
   </div>

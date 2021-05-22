@@ -12,7 +12,6 @@
 
   .thumbnail-slide {
     position: relative;
-
     width: 840px;
     height: 79px;
 
@@ -22,11 +21,9 @@
       float: left;
 
       width: 100%;
-
       box-sizing: border-box;
 
       animation: fadeIn ease-in 0.5s;
-
       @keyframes fadeIn {
         from {
           opacity: 0;
@@ -43,7 +40,6 @@
 
       .item-img {
         margin: 8px 5px 0px 5px;
-
         width: 158px;
         height: 63px;
 

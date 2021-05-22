@@ -1,8 +1,8 @@
 // libs
 import React from "react";
 // components
-import BoxKaraoke from "../BoxKaraoke";
 import TitleBoxKey from "../TitleBoxKey";
+import BoxKaraoke from "../BoxKaraoke";
 // others
 import "./style.scss";
 
