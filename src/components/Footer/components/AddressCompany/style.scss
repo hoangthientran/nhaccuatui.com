@@ -1,0 +1,28 @@
+.address-company-wrapper {
+  margin-top: 23px;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+  cursor: pointer;
+
+  color: #fff;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  .icon-address {
+    margin: -3px 11px 6px 0;
+
+    font-size: 20px;
+  }
+
+  .address-company {
+    margin: -10px 8px 0 0;
+
+    font-size: 12px;
+    font-weight: bold;
+  }
+}

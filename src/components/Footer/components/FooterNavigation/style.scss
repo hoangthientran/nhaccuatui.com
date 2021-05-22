@@ -1,5 +1,7 @@
-.footer-navigation {
-  display: flex;
+.footer-navigation-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
 
   width: 100%;
 }

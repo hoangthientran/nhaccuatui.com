@@ -1,10 +1,8 @@
+// libs
 import React from "react";
+// others
 import "./style.scss";
 
-SeperationLine.propTypes = {};
-
-function SeperationLine() {
-  return <div className="seperation-line"></div>;
-}
+const SeperationLine = () => <div className="seperation-line"></div>;
 
 export default SeperationLine;

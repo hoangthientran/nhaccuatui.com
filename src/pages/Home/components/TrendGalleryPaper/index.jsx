@@ -34,11 +34,11 @@ const TrendGalleryPaper = ({
 );
 
 TrendGalleryPaper.propTypes = {
-  listTrend: PropTypes.object,
+  listTrend: PropTypes.array,
 };
 
 TrendGalleryPaper.defaultProps = {
-  listTrend: {},
+  listTrend: [],
 };
 
 export default TrendGalleryPaper;

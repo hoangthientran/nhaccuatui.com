@@ -15,12 +15,12 @@ const TrendItem = ({ listTrend, index }) => (
 );
 
 TrendItem.propTypes = {
-  listTrend: PropTypes.object,
+  listTrend: PropTypes.array,
   index: PropTypes.number,
 };
 
 TrendItem.defaultProps = {
-  listTrend: {},
+  listTrend: [],
   index: 0,
 };
 

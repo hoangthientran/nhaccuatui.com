@@ -1,0 +1,17 @@
+.list-support-wrapper {
+  margin: 0;
+
+  list-style: none;
+
+  .item-support {
+    float: left;
+    margin: 0;
+
+    padding: 11px 0;
+    width: 50%;
+
+    cursor: pointer;
+
+    line-height: 1.5;
+  }
+}
