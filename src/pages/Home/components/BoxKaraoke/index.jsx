@@ -18,13 +18,10 @@ const BoxKaraoke = () => {
     _totalRows: 16,
   });
 
-  // const [page, setPage] = useState(1);
   const [filters, setFilters] = useState({
     _page: 1,
     _limit: 4,
   });
-  const [page, setPage] = useState(1);
-  console.log(page);
 
   useEffect(() => {
     (async () => {
@@ -32,7 +29,6 @@ const BoxKaraoke = () => {
         const { data, pagination } = await karaokeApi.getAll(filters);
         setKaraokeList(data);
         setPagination(pagination);
-        // console.log(pagination);
       } catch (error) {
         console.log("Failed to fetch cooporation list:", error);
       }
@@ -40,7 +36,6 @@ const BoxKaraoke = () => {
   }, [filters]);
 
   const handlePageChange = (page, pageSize) => {
-    setPage(page);
     setFilters((prevFilters) => ({
       ...prevFilters,
       _page: page,
@@ -48,20 +43,32 @@ const BoxKaraoke = () => {
     }));
   };
 
-  // const keyUp =  useKeyPress("ArrowUp");
   const [hover, setHover] = useState(false);
-  const keyDown = useKeyPress(38, hover) || useKeyPress(34, hover);
-  const keyUp = useKeyPress(40, hover) || useKeyPress(33, hover);
-  console.log(keyUp);
-  console.log(hover);
+  const keyDown1 = useKeyPress("ArrowDown");
+  const keyDown2 = useKeyPress("PageDown");
+  const keyUp1 = useKeyPress("ArrowUp");
+  const keyUp2 = useKeyPress("PageUp");
 
-  if (keyDown) {
-    console.log("haha");
-    setFilters((prevFilters) => ({
-      ...prevFilters,
-      _page: page,
-    }));
-  }
+  useEffect(() => {
+    if (hover && (keyDown1 || keyDown2)) {
+      setFilters((prevFilters) => ({
+        ...prevFilters,
+        _page: prevFilters._page > 1 ? prevFilters._page - 1 : 1,
+      }));
+    }
+  }, [hover, keyDown1, keyDown2]);
+
+  useEffect(() => {
+    if (hover && (keyUp1 || keyUp2)) {
+      setFilters((prevFilters) => ({
+        ...prevFilters,
+        _page:
+          prevFilters._page + 1 <= 4
+            ? prevFilters._page + 1
+            : prevFilters._page,
+      }));
+    }
+  }, [hover, keyUp1, keyUp2]);
 
   return (
     <>

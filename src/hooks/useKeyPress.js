@@ -1,33 +1,33 @@
 import { useEffect, useState } from "react";
 
-const useKeyPress = (targetKey, hover) => {
+const useKeyPress = (targetKey) => {
   // State for keeping track of whether key is pressed
   const [keyPressed, setKeyPressed] = useState(false);
 
-  const downHandler = (e) => {
-    e.preventDefault();
-    if (e.keyCode === targetKey) {
-      setKeyPressed(true);
-    }
-  };
-
-  const upHandler = ({ key }) => {
-    if (key === targetKey) {
-      setKeyPressed(false);
-    }
-  };
-
   // Add event listeners
   useEffect(() => {
-    if (hover) {
-      window.addEventListener("keydown", downHandler);
-      window.addEventListener("keyup", upHandler);
-    }
+    const downHandler = (e) => {
+      e.preventDefault();
+      if (e.key === targetKey) {
+        setKeyPressed(true);
+      }
+    };
+
+    const upHandler = (e) => {
+      e.preventDefault();
+      if (e.key === targetKey) {
+        setKeyPressed(false);
+      }
+    };
+
+    window.addEventListener("keydown", downHandler);
+    window.addEventListener("keyup", upHandler);
+
     return () => {
       window.removeEventListener("keydown", downHandler);
       window.removeEventListener("keyup", upHandler);
     };
-  }, [hover]);
+  }, [targetKey]);
   return keyPressed;
 };
 
