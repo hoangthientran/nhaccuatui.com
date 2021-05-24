@@ -5,6 +5,13 @@
   width: 152px;
   height: 152px;
 
+  .icon_play {
+    position: relative;
+    .icon-ant-play-circle {
+      position: absolute;
+    }
+  }
+
   &:hover {
     background-color: rgba(0, 0, 0, 0.3);
   }

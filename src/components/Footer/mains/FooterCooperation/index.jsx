@@ -24,18 +24,38 @@ const FooterCooperation = () => {
         const { data, pagination } = await cooperationApi.getAll(filters);
         setCooperationList(data);
         setPagination(pagination);
-        // console.log(pagination._totalRows / pagination._limit);
       } catch (error) {
         console.log("Failed to fetch cooporation list:", error);
       }
     })();
   }, [filters]);
 
-  const handlePageChange = (e, page) =>
+  const handlePageChange = (page, pageSize) =>
     setFilters((prevFilters) => ({
       ...prevFilters,
       _page: page,
+      _limit: pageSize,
     }));
+
+  // const keyPrev = useKeyPress("ArrowLeft");
+  // const keyRight = useKeyPress("ArrowRight");
+  // const [hover, setHover] = useState(false);
+
+  // useEffect(() => {
+  //   // document.addEventListener("DOMContentLoaded", () => {
+  //   // bat su kien khi nguoi dung scroll
+  //   window.addEventListener("scroll", () => {
+  //     if (window.pageYOffset >= 3240 && window.pageYOffset <= 3350) {
+  //       console.log("dang o day");
+  //       if (!hover) {
+  //         if (keyPrev) {
+  //           handlePageChange();
+  //         }
+  //       }
+  //     }
+  //   })
+  //   // })
+  // }, [])
 
   return (
     <div className="footer-cooperation-wrapper">

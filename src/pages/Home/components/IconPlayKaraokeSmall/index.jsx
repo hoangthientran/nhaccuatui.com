@@ -6,7 +6,7 @@ import "./style.scss";
 
 const IconPlayKaraokeSmall = () => (
   <span className="icon_play-small-wrapper">
-    <PlayCircleOutlined />
+    <PlayCircleOutlined className="icon-ant-play-circle" />
   </span>
 );
 

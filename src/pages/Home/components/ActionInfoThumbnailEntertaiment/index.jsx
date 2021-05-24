@@ -11,7 +11,7 @@ const ActionInfoThumbnailEntertaiment = ({ item }) => (
   <div className="action-info-thumnail-entertaiment-wrapper">
     <ViewListenMv item={item} />
     <span className="icon_play-small">
-      <PlayCircleOutlined />
+      <PlayCircleOutlined className="icon-ant-play-circle" />
     </span>
   </div>
 );

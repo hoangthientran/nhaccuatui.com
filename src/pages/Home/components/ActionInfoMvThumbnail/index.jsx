@@ -11,7 +11,7 @@ const ActionInfoMvThumbnail = ({ item }) => (
   <div className="action-info-mv-wrapper">
     <ViewListenMv item={item} />
     <span className="icon_play">
-      <PlayCircleOutlined />
+      <PlayCircleOutlined className="icon-ant-play-circle" />
     </span>
   </div>
 );

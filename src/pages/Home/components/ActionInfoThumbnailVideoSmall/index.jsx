@@ -10,7 +10,7 @@ const ActionInfoThumbnailVideoSmall = ({ item }) => (
   <div className="action-info-thumnail-video-small-wrapper">
     <ViewListenSmall item={item} />
     <span className="icon_play-small">
-      <PlayCircleOutlined />
+      <PlayCircleOutlined className="icon-ant-play-circle" />
     </span>
   </div>
 );

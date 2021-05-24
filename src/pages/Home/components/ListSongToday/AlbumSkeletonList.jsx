@@ -10,7 +10,7 @@ const style2 = { width: "152px", height: "152px" };
 const AlbumSkeletonList = ({ length }) => (
   <Row gutter={{ xs: 2, sm: 3, md: 5, lg: 5 }} style={style}>
     {Array.from(new Array(length)).map(() => (
-      <Col className="gutter-row" span={5}>
+      <Col key={Math.random()} className="gutter-row" span={5}>
         <Skeleton.Image style={style2} />
       </Col>
     ))}
