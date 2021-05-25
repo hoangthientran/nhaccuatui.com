@@ -1,8 +1,8 @@
 // libs
 import React from "react";
 // components
-import BoxEntertainment from "../BoxEntertainment";
 import TitleBoxKey from "../TitleBoxKey";
+import BoxEntertainment from "../BoxEntertainment";
 // others
 import "./style.scss";
 

@@ -6,9 +6,9 @@ import ListTopic from "../ListTopic";
 // others
 import "./style.scss";
 
-const BoxTopicMusic = () => (
+const BoxTopicMusic = ({ defaultLanguage }) => (
   <div className="box-topic-music-wrapper">
-    <TitleBoxKey>CHỦ ĐỀ HOT</TitleBoxKey>
+    <TitleBoxKey nameLanguage={defaultLanguage.TOPICHOT} />
     <ListTopic />
   </div>
 );

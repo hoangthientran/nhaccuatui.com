@@ -1,0 +1,21 @@
+.mail-support-wrapper {
+  margin-top: 12px;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+  color: #fff;
+
+  .icon-mail {
+    margin-right: 8px;
+
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .text-email {
+    font-size: 12px;
+    font-weight: bold;
+  }
+}

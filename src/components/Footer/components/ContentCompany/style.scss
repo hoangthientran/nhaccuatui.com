@@ -1,0 +1,30 @@
+.content-company-wrapper {
+  width: 100%;
+
+  .t-detail {
+    margin: 0;
+
+    font-size: 13px;
+
+    line-height: 22px;
+    color: #909090;
+
+    &::before {
+      content: "";
+      float: left;
+
+      display: block;
+
+      margin: 10px 8px 0 0;
+      width: 4px;
+      height: 4px;
+
+      border-radius: 50%;
+      background-color: #909090;
+    }
+
+    .t-bold {
+      font-weight: bold;
+    }
+  }
+}

@@ -1,25 +1,28 @@
-.name-song-info {
-  font-size: 14px;
+.information-singer-wrapper {
+  width: 100%;
+  .name-song-info {
+    font-size: 14px;
 
-  color: #49443e;
-  font-weight: 500;
-  line-height: 24px;
+    color: #49443e;
+    font-weight: 500;
+    line-height: 24px;
 
-  max-width: 200px;
+    max-width: 200px;
 
-  &:hover {
-    color: #55b6ef;
+    &:hover {
+      color: #55b6ef;
+    }
   }
-}
 
-.name-single-under-info {
-  height: 24px;
+  .name-single-under-info {
+    height: 24px;
 
-  font-size: 12px;
-  line-height: 26px;
-  color: rgba(0, 0, 0, 0.5);
+    font-size: 12px;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 0.5);
 
-  &:hover {
-    color: #55b6ef;
+    &:hover {
+      color: #55b6ef;
+    }
   }
 }

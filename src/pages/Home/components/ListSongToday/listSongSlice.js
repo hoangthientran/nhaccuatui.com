@@ -2,30 +2,22 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import listSongApi from "../../../../api/listSongApi";
 
 // First, create the thunk
-export const listSong = createAsyncThunk("user/listSong", async () => {
-  const data = await listSongApi.getAll();
-  console.log(data);
-
-  return data;
+export const listSong = createAsyncThunk("song/listSong", async () => {
+  const songs = await listSongApi.getListSong();
+  return songs;
 });
-
-export const listSongSlice = createAsyncThunk(
-  "user/listSongSlice",
-  async (payload) => {
-    const { data } = await listSongApi.getAll(payload);
-    console.log(data);
-
-    return data;
-  }
-);
 
 const menuSlice = createSlice({
   name: "song",
   initialState: {
-    listSong: {},
+    dataSong: [],
   },
-  reducer: {},
-  // /
+  reducers: {},
+  extraReducers: {
+    [listSong.fulfilled]: (state, action) => {
+      state.dataSong = action.payload;
+    },
+  },
 });
 
 const { reducer } = menuSlice;

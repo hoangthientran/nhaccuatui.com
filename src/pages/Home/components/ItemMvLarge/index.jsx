@@ -9,7 +9,7 @@ import "./style.scss";
 
 const ItemMvLarge = () => (
   <li className="item-mv-large-wrapper">
-    <ul className="mv-large-wrapper">
+    <ul className="mv-large-inner">
       {listContentBigMvHot.map((item) => (
         <li key={item.id} className="item-mv-large">
           <VideoMvLarge item={item} />

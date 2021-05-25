@@ -2,7 +2,7 @@
 import React from "react";
 // components
 import Song from "../Song";
-// dataSources
+// constants
 import { listSong } from "../../../../mocks";
 // others
 import "./style.scss";

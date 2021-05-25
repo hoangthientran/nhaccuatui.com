@@ -1,0 +1,39 @@
+.trend-gallery-paper {
+  position: absolute;
+  bottom: 0;
+  left: 54px;
+  right: 0;
+  z-index: 11;
+
+  width: 192px;
+  height: 32px;
+
+  .list-image {
+    display: flex;
+    justify-content: space-between;
+
+    list-style: none;
+
+    .trend-dot-circle {
+      display: inline-block;
+
+      height: 32px;
+      width: 32px;
+
+      border-radius: 50%;
+
+      .img-dot {
+        width: 32px;
+        height: 33px;
+
+        border-radius: 50%;
+        overflow: hidden;
+        cursor: pointer;
+      }
+
+      .active {
+        border: 2px solid red;
+      }
+    }
+  }
+}

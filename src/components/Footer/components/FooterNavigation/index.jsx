@@ -1,20 +1,18 @@
+// libs
 import React from "react";
+// components
 import NavigationOne from "../NavigationOne";
-import NavigationThree from "../NavigationThree";
 import NavigationTwo from "../NavigationTwo";
-
+import NavigationThree from "../NavigationThree";
+// others
 import "./style.scss";
 
-FooterNavigation.propTypes = {};
-
-function FooterNavigation() {
-  return (
-    <div className="footer-navigation">
-      <NavigationOne />
-      <NavigationTwo />
-      <NavigationThree />
-    </div>
-  );
-}
+const FooterNavigation = () => (
+  <div className="footer-navigation-wrapper">
+    <NavigationOne />
+    <NavigationTwo />
+    <NavigationThree />
+  </div>
+);
 
 export default FooterNavigation;

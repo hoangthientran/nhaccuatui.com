@@ -1,27 +1,19 @@
 // libs
-import React from "react";
+import { PlayCircleOutlined } from "@ant-design/icons";
 import PropTypes from "prop-types";
-import { EyeOutlined, PlayCircleOutlined } from "@ant-design/icons";
-// dataSources
-import { formatNumber } from "../../../../mocks";
+import React from "react";
+import ViewListenSmall from "../ViewListionSmall";
 // others
 import "./style.scss";
 
-function ActionInfoThumbnailVideoSmall({ item }) {
-  return (
-    <div className="action-info-thumnail-video-small-wrapper">
-      <div className="view-listion-small">
-        <span className="icon-view-small">
-          <EyeOutlined />
-        </span>
-        <span className="number"> {formatNumber(item.number)} </span>
-      </div>
-      <span className="icon_play-small">
-        <PlayCircleOutlined />
-      </span>
-    </div>
-  );
-}
+const ActionInfoThumbnailVideoSmall = ({ item }) => (
+  <div className="action-info-thumnail-video-small-wrapper">
+    <ViewListenSmall item={item} />
+    <span className="icon_play-small">
+      <PlayCircleOutlined className="icon-ant-play-circle" />
+    </span>
+  </div>
+);
 
 ActionInfoThumbnailVideoSmall.propTypes = {
   item: PropTypes.object,

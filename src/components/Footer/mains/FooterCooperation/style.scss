@@ -1,0 +1,20 @@
+.footer-cooperation-wrapper {
+  position: relative;
+  padding-bottom: 15px;
+
+  width: 100%;
+  background-color: #efefef;
+
+  .footer-container-inner {
+    margin: 15px auto 0 auto;
+    width: 1170px;
+
+    .pagination {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      margin-top: 8px;
+    }
+  }
+}

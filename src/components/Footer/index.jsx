@@ -1,20 +1,18 @@
+// libs
 import React from "react";
-import Cooperation from "./mains/Cooperation";
-import CopyRight from "./mains/CopyRight";
+// components
+import FooterCooperation from "./mains/FooterCooperation";
 import FooterContainer from "./mains/FooterContainer";
-
+import FooterBoxCopyRight from "./mains/FooterBoxCopyRight";
+// others
 import "./style.scss";
 
-Footer.propTypes = {};
-
-function Footer() {
-  return (
-    <div className="box-footer">
-      <Cooperation />
-      <FooterContainer />
-      <CopyRight />
-    </div>
-  );
-}
+const Footer = () => (
+  <div className="footer-wrapper">
+    <FooterCooperation />
+    <FooterContainer />
+    <FooterBoxCopyRight />
+  </div>
+);
 
 export default Footer;

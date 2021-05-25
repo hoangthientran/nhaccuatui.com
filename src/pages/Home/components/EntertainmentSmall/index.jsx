@@ -3,7 +3,7 @@ import React from "react";
 // components
 import ThumbnailEntertainment from "../ThumbnailEntertainment";
 import InfoNameEntertaimentThumbnailSmall from "../InfoNameEntertaimentThumbnailSmall";
-// dataSources
+// mocks
 import { listEntertainment } from "../../../../mocks";
 // others
 import "./style.scss";

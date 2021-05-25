@@ -1,0 +1,52 @@
+.button-tab-song-select-wrapper {
+  width: 100%;
+  .ant-tabs-nav {
+    height: 32px;
+    width: 300px;
+
+    line-height: 32px;
+    background: #e5e5e5;
+
+    border-radius: 16px;
+    overflow: hidden;
+
+    .ant-tabs-nav-wrap {
+      width: 300px;
+
+      .ant-tabs-nav-list {
+        .ant-tabs-tab {
+          margin: 0;
+          width: 100px;
+
+          .ant-tabs-tab-btn {
+            width: 100px;
+            text-align: center;
+          }
+        }
+
+        .ant-tabs-tab-active {
+          z-index: 9999999;
+
+          width: 100px;
+          text-align: center;
+
+          background: #e74c3c;
+          color: #fff;
+
+          .ant-tabs-tab-btn {
+            width: 100px;
+
+            text-align: center;
+            color: #fff;
+            border-bottom: none;
+          }
+        }
+      }
+    }
+
+    .ant-tabs-nav-operations {
+      width: 0;
+      display: none;
+    }
+  }
+}

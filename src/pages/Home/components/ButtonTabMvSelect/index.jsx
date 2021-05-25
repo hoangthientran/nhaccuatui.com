@@ -1,7 +1,7 @@
 // libs
+import React, { useState } from "react";
 import { Tabs } from "antd";
 import "antd/dist/antd.css";
-import React, { useState } from "react";
 // components
 import ContentMvVN from "../ContentMvVN";
 // others
@@ -16,7 +16,7 @@ const ButtonTabMvSelect = () => {
   const { tabPosition } = state;
 
   return (
-    <div className="btn-tab-select-wrapper">
+    <div className="btn-tab-mv-select-wrapper">
       <Tabs tabPosition={tabPosition}>
         <TabPane tab="Việt Nam" key="1">
           <ContentMvVN />

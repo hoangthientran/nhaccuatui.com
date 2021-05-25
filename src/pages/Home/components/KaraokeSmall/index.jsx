@@ -1,15 +1,14 @@
 // libs
 import React from "react";
+// mocks
+import InfoNameKaraokeThumbnailSmall from "../InfoNameKaraokeThumbnailSmall";
 // components
 import ThumbnailKaraoke from "../ThumbnailKaraoke";
-import InfoNameKaraokeThumbnailSmall from "../InfoNameKaraokeThumbnailSmall";
-// dataSources
-import { listKaraoke } from "../../../../mocks/Home/Karaoke";
 // others
 import "./style.scss";
 
-const KaraokeSmall = () =>
-  listKaraoke.map((item) => (
+const KaraokeSmall = ({ karaokeList }) =>
+  karaokeList.map((item) => (
     <div className="karaoke-small-wrapper" key={item.id}>
       <ThumbnailKaraoke item={item} />
       <InfoNameKaraokeThumbnailSmall item={item} />

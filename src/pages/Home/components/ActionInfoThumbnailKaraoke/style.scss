@@ -10,7 +10,7 @@
     transition: all 0.45s ease 0s;
   }
 
-  &:hover > .icon_play-small {
+  &:hover > .icon_play-small-wrapper {
     display: block;
     animation: fadeIn ease-in 0.6s;
 
@@ -50,22 +50,5 @@
       font-size: 12px;
       line-height: 24px;
     }
-  }
-
-  .icon_play-small {
-    position: absolute;
-
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-
-    width: 36px;
-    height: 36px;
-
-    font-size: 36px;
-
-    color: #fff;
-
-    display: none;
   }
 }

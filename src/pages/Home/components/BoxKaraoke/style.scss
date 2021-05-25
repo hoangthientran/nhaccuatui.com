@@ -1,8 +1,13 @@
-.box-karaoke-wrapper {
+.karaoke-list-wrapper {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
 
   margin: 0;
   padding: 0;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

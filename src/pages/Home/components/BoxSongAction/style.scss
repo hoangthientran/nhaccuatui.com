@@ -4,27 +4,23 @@
   right: 0;
   transform: translateY(-50%);
 
-  margin-right: 18px;
-
-  height: 14px;
-
   display: flex;
   flex-flow: row nowrap;
 
-  background: #fff;
+  margin-right: 18px;
+  height: 14px;
 
+  background: #fff;
   display: none;
 
   .button-add-playlist {
     display: block;
-
     margin: 0px 12px 0px 0px;
 
     width: 16px;
     height: 14px;
 
     color: rgba(0, 0, 0, 0.88);
-
     background: url(https://stc-id.nixcdn.com/v11/images/icon.png) -44px top no-repeat;
 
     &:hover {
@@ -40,7 +36,6 @@
     height: 14px;
 
     background: url(https://stc-id.nixcdn.com/v11/images/icon.png) -30px top no-repeat;
-
     display: block;
 
     &:hover {

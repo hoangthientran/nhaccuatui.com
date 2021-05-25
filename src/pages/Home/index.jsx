@@ -11,8 +11,8 @@ import "./style.scss";
 const Home = () => {
   const { defaultLanguage } = useContext(MultilangContext);
   return (
-    <div className="box-content-wrapper">
-      <div className="box-content-wrapper-inner">
+    <div className="home-content-wrapper">
+      <div className="home-content-inner">
         <BoxLeft defaultLanguage={defaultLanguage} />
         <BoxRight defaultLanguage={defaultLanguage} />
       </div>

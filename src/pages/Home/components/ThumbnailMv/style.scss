@@ -1,4 +1,4 @@
-.avatar-mv {
+.thumb-avatar-mv-wrapper {
   position: absolute;
   z-index: 1;
 
@@ -6,11 +6,9 @@
   height: 230px;
 
   .img-mv {
-    max-width: 100%;
+    margin-bottom: 5px;
 
     width: 410px;
     height: 230px;
-
-    margin-bottom: 5px;
   }
 }

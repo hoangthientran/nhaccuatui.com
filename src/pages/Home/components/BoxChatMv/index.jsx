@@ -6,9 +6,9 @@ import TitleBoxKeyCommon from "../TitleBoxKeyCommon";
 // others
 import "./style.scss";
 
-const BoxChatMv = () => (
+const BoxChatMv = ({ defaultLanguage }) => (
   <div className="box-chat-mv-wrapper">
-    <TitleBoxKeyCommon>BXH MV</TitleBoxKeyCommon>
+    <TitleBoxKeyCommon nameLanguage={defaultLanguage.BXHMV} />
     <ButtonTabMvSelect />
   </div>
 );

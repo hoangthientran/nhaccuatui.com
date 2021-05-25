@@ -5,7 +5,6 @@ export const MultilangContext = createContext();
 
 const Multilang = ({ children }) => {
   const [defaultLanguage, setDefaultLanguage] = useState(dictionary.EN);
-  console.log(defaultLanguage);
 
   const handleChangeVN = () => {
     setDefaultLanguage(dictionary.VN);

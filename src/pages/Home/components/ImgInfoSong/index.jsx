@@ -5,9 +5,7 @@ import PropTypes from "prop-types";
 import "./style.scss";
 
 const ImgInfoSong = ({ item }) => (
-  <div>
-    <img className="img-info-song" alt="img-song" src={item.src_main} />
-  </div>
+  <img className="img-info-song" alt="img-song" src={item.src_main} />
 );
 
 ImgInfoSong.propTypes = {

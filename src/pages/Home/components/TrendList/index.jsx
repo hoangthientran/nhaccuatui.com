@@ -1,13 +1,14 @@
 // libs
 import React, { useEffect, useRef, useState } from "react";
-import classnames from "classnames";
+
 // mocks
 import { listTrend } from "../../../../mocks";
 // others
 import "./style.scss";
+import TrendItem from "../TrendItem";
+import TrendGalleryPaper from "../TrendGalleryPaper";
 
 const TrendList = () => {
-  // 1
   const [activeDefault, setActiveDefault] = useState(listTrend[0].status);
   const [index, setIndex] = useState(0);
   const curentIndex = useRef(0);
@@ -31,36 +32,13 @@ const TrendList = () => {
 
   return (
     <div className="trend-artist-wrapper">
-      <div className="trend-item">
-        <img className="img-trend" src={listTrend[index].src} alt="" />
-        <div className="trend-info">
-          <p className="trend-top-week">Top Nghệ Sĩ Trending Trong Tuần</p>
-          <p className="trend-name-singer-title">
-            {listTrend[index].name_singer}
-          </p>
-        </div>
-      </div>
-      <div className="trend-gallery-paper">
-        <ul className="list-image">
-          {listTrend.map((item, index) => (
-            <li className="trend-dot-circle" key={item.id}>
-              <img
-                onMouseEnter={() => {
-                  setIndex(index);
-                  setActiveDefault(item.src);
-                }}
-                className={classnames({
-                  "img-dot": true,
-                  active: activeDefault === item.src,
-                })}
-                // className="img-dot"
-                src={item.src}
-                alt={item.name_singer}
-              />
-            </li>
-          ))}
-        </ul>
-      </div>
+      <TrendItem listTrend={listTrend} index={index} />
+      <TrendGalleryPaper
+        activeDefault={activeDefault}
+        listTrend={listTrend}
+        setIndex={setIndex}
+        setActiveDefault={setActiveDefault}
+      />
     </div>
   );
 };
