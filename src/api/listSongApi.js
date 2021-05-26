@@ -1,9 +1,9 @@
 import axiosClient from "./axiosClient";
 
 const listSongApi = {
-  getListSong() {
+  getListSong(params) {
     const url = "/listContentSongToday";
-    return axiosClient.get(url);
+    return axiosClient.get(url, { params });
   },
 };
 

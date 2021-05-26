@@ -71,16 +71,15 @@ const BoxKaraoke = () => {
   }, [hover, keyUp1, keyUp2]);
 
   return (
-    <>
-      <ul
-        className="karaoke-list-wrapper"
-        onMouseEnter={() => {
-          setHover(true);
-        }}
-        onMouseLeave={() => {
-          setHover(false);
-        }}
-      >
+    <div
+      onMouseEnter={() => {
+        setHover(true);
+      }}
+      onMouseLeave={() => {
+        setHover(false);
+      }}
+    >
+      <ul className="karaoke-list-wrapper">
         <ItemKaraoke karaokeList={karaokeList} />
       </ul>
       <div className="pagination">
@@ -91,7 +90,7 @@ const BoxKaraoke = () => {
           onChange={handlePageChange}
         />
       </div>
-    </>
+    </div>
   );
 };
 

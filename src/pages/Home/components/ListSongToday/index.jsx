@@ -1,39 +1,40 @@
 // libs
-import React, { useEffect, useState } from "react";
-import { useDispatch } from "react-redux";
+import React, { useState } from "react";
+import PropTypes from "prop-types";
 // components
 import AlbumSkeletonList from "./AlbumSkeletonList";
 import ElementSong from "../ElementSong";
-// action
-import { listSong } from "./listSongSlice";
 // others
 import "./style.scss";
 
-const ListSongToday = () => {
-  const dispatch = useDispatch();
-  const [songs, setSongs] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    try {
-      (async () => {
-        const action = listSong();
-        const resultAction = await dispatch(action);
-        setSongs(resultAction.payload);
-      })();
-
-      setLoading(false);
-    } catch (error) {
-      console.log("Failed to fetch song list:", error);
-    }
-  }, []);
+const ListSongToday = ({ songs, loading }) => {
+  const [page, setPage] = useState(1);
+  const totalPages = 3;
 
   return (
     <ul className="list-song-today-wrapper">
-      {loading ? <AlbumSkeletonList /> : <ElementSong songs={songs} />}
-      {/* <ElementSong songs={songs} /> */}
+      {loading ? (
+        <AlbumSkeletonList />
+      ) : (
+        <ElementSong
+          songs={songs}
+          page={page}
+          setPage={setPage}
+          totalPages={totalPages}
+        />
+      )}
     </ul>
   );
+};
+
+ListSongToday.propTypes = {
+  songs: PropTypes.array,
+  loading: PropTypes.bool,
+};
+
+ListSongToday.defaultProps = {
+  songs: [],
+  loading: true,
 };
 
 export default ListSongToday;

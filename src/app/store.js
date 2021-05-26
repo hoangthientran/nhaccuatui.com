@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import songReducer from "../pages/Home/components/ListSongToday/listSongSlice";
+import songReducer from "../pages/Home/components/ListAlbum/listSongSlice";
 
 const rootReducer = {
   song: songReducer,

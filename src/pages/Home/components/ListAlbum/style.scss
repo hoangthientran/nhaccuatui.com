@@ -1,4 +1,11 @@
 .list-album-wrapper {
   margin-bottom: 10px;
   width: 840px;
+
+  .pagination-listen-today {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content:center;
+  }
 }
