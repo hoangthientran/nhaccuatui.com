@@ -37,26 +37,6 @@ const FooterCooperation = () => {
       _limit: pageSize,
     }));
 
-  // const keyPrev = useKeyPress("ArrowLeft");
-  // const keyRight = useKeyPress("ArrowRight");
-  // const [hover, setHover] = useState(false);
-
-  // useEffect(() => {
-  //   // document.addEventListener("DOMContentLoaded", () => {
-  //   // bat su kien khi nguoi dung scroll
-  //   window.addEventListener("scroll", () => {
-  //     if (window.pageYOffset >= 3240 && window.pageYOffset <= 3350) {
-  //       console.log("dang o day");
-  //       if (!hover) {
-  //         if (keyPrev) {
-  //           handlePageChange();
-  //         }
-  //       }
-  //     }
-  //   })
-  //   // })
-  // }, [])
-
   return (
     <div className="footer-cooperation-wrapper">
       <div className="footer-container-inner">
