@@ -7,8 +7,8 @@ import InfoNameSong from "../InfoNameSong";
 // others
 import "./style.scss";
 
-const ElementSong = ({ songs }) =>
-  songs.map((item) => (
+const ElementSong = ({ songTodayList }) =>
+  songTodayList.map((item) => (
     <li key={item.id} className="list-song-today">
       <ThumbnailAlbum item={item} />
       <InfoNameSong item={item} />
@@ -16,11 +16,11 @@ const ElementSong = ({ songs }) =>
   ));
 
 ElementSong.propTypes = {
-  songs: PropTypes.array,
+  songTodayList: PropTypes.array,
 };
 
 ElementSong.defaultProps = {
-  songs: [],
+  songTodayList: [],
 };
 
 export default ElementSong;

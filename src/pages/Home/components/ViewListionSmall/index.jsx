@@ -1,8 +1,8 @@
 // libs
 import React from "react";
 import { EyeOutlined } from "@ant-design/icons";
-// constants
-import { formatNumber } from "../../../../constants";
+// untils
+import { formatNumber } from "../../../../untils";
 // others
 import "./style.scss";
 

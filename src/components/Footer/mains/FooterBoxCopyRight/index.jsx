@@ -10,7 +10,7 @@ import "./style.scss";
 
 const FooterBoxCopyRight = () => (
   <div className="copy-right-wrapper">
-    <div className="copy-right-inner">
+    <div className="copy-right-wrapper-inner">
       <AddressCompany />
       <MailSupport />
       <TelephoneSupport />
