@@ -10,7 +10,6 @@ import useKeyPress from "../../../../hooks/useKeyPress";
 // others
 import "./style.scss";
 
-
 const BoxKaraoke = () => {
   const dispatch = useDispatch();
   const [page, setPage] = useState(1);
@@ -27,7 +26,7 @@ const BoxKaraoke = () => {
     }
   }, [page]);
 
-  const karaokeList = useSelector(state => state.listKaraoke);
+  const karaokeList = useSelector((state) => state.listKaraoke);
 
   const handlePageChange = (page) => {
     setPage(page);
@@ -42,23 +41,27 @@ const BoxKaraoke = () => {
 
   useEffect(() => {
     if (hover && (keyDown1 || keyDown2)) {
-      setPage(page > 1 ? page - 1 : 1)
+      setPage(page > 1 ? page - 1 : 1);
     }
   }, [hover, keyDown1, keyDown2]);
 
   useEffect(() => {
     if (hover && (keyUp1 || keyUp2)) {
-      setPage(page + 1 <= 4 ? page + 1 : page)
+      setPage(page + 1 <= 4 ? page + 1 : page);
     }
   }, [hover, keyUp1, keyUp2]);
 
   return (
     <div
       className="pagination-karaoke"
-      onMouseEnter={() => { setHover(true); }}
-      onMouseLeave={() => { setHover(false); }}
+      onMouseEnter={() => {
+        setHover(true);
+      }}
+      onMouseLeave={() => {
+        setHover(false);
+      }}
     >
-      <ul className="karaoke-list-wrapper" >
+      <ul className="karaoke-list-wrapper">
         <ItemKaraoke karaokeList={karaokeList.current} />
       </ul>
       <div className="pagination">
