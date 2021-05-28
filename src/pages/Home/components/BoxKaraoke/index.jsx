@@ -1,6 +1,6 @@
 // libs
 import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { Pagination } from "antd";
 // components
 import ItemKaraoke from "../ItemKaraoke";
@@ -15,19 +15,20 @@ import "./style.scss";
 const BoxKaraoke = () => {
   const dispatch = useDispatch();
   const [page, setPage] = useState(1);
+  const [karaokeList, setKaraokeList] = useState([]);
+
   useEffect(() => {
     try {
       (async () => {
         const action = karaoke(page);
         const resultAction = await dispatch(action);
-        console.log(resultAction);
+        setKaraokeList(resultAction.payload);
       })();
     } catch (error) {
       // console.log("Failed to fetch song list:", error);
     }
   }, [page]);
-
-  const karaokeList = useSelector((state) => state.listKaraoke);
+  // const karaokeList = useSelector((state) => state.listKaraoke);
 
   const handlePageChange = (page) => {
     setPage(page);
@@ -54,7 +55,7 @@ const BoxKaraoke = () => {
   return (
     <div ref={hoverRef}>
       <ul className="karaoke-list-wrapper">
-        <ItemKaraoke karaokeList={karaokeList.current} />
+        <ItemKaraoke karaokeList={karaokeList} />
       </ul>
       <div className="pagination">
         <Pagination

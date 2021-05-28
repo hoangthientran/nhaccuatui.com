@@ -1,6 +1,6 @@
 // libs
 import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 // components
 import AlbumSkeletonList from "./AlbumSkeletonList";
 import ElementSong from "../ElementSong";
@@ -17,21 +17,21 @@ const ListSongToday = () => {
   const dispatch = useDispatch();
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(1);
+  const [songListToday, setSongListToday] = useState([]);
 
   useEffect(() => {
     try {
       (async () => {
         const action = songToday(page);
         const resultAction = await dispatch(action);
-        console.log(resultAction);
+        setSongListToday(resultAction.payload);
         setLoading(false);
       })();
     } catch (error) {
       // console.log("Failed to fetch song list:", error);
     }
   }, [page]);
-
-  const songTodayList = useSelector((state) => state.listSongToday);
+  // const songTodayList = useSelector((state) => state.listSongToday);
 
   const handlePageChange = (page) => {
     setPage(page);
@@ -62,7 +62,7 @@ const ListSongToday = () => {
         {loading ? (
           <AlbumSkeletonList />
         ) : (
-          <ElementSong songTodayList={songTodayList.current} />
+          <ElementSong songTodayList={songListToday} />
         )}
       </ul>
       <div className="pagination-song-today">
