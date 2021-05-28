@@ -10,7 +10,6 @@ export const songToday = createAsyncThunk(
   async (page) => {
     const filters = { _page: page, _limit: 5 };
     const listSong = await songTodayApi.getSongTodayApi(filters);
-    console.log(listSong);
     return listSong.data;
   }
 );

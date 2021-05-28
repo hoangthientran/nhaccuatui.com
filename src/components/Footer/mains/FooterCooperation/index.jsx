@@ -25,7 +25,7 @@ const FooterCooperation = () => {
         setCooperationList(data);
         setPagination(pagination);
       } catch (error) {
-        console.log("Failed to fetch cooporation list:", error);
+        // console.log("Failed to fetch cooporation list:", error);
       }
     })();
   }, [filters]);

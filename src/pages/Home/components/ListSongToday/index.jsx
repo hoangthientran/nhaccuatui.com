@@ -24,8 +24,8 @@ const ListSongToday = () => {
         const action = songToday(page);
         const resultAction = await dispatch(action);
         console.log(resultAction);
+        setLoading(false);
       })();
-      setLoading(false);
     } catch (error) {
       // console.log("Failed to fetch song list:", error);
     }

@@ -9,7 +9,7 @@ import "./style.scss";
 const AlbumSkeletonList = ({ length }) => (
   <ul className="album-skeleton-wrapper">
     {Array.from(new Array(length)).map(() => (
-      <li className="album-skeleton-item">
+      <li key={Math.random()} className="album-skeleton-item">
         <Skeleton.Image className="img-skeleton-album" />
       </li>
     ))}
