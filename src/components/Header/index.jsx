@@ -11,12 +11,9 @@ import { ThemeContext } from "../../context/ThemeContext";
 import "./style.scss";
 
 const Header = () => {
-  const { theme } = useContext(ThemeContext);
-  const { isLightTheme, light, dark } = theme;
-  const style = isLightTheme ? light : dark;
-
+  const { color } = useContext(ThemeContext);
   return (
-    <div className="menu-header-wrapper" style={style}>
+    <div className="menu-header-wrapper" style={{ backgroundColor: color }}>
       <div className="menu-header-inner">
         <MenuTop />
         <UserLoginLogout />

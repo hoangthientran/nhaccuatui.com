@@ -9,14 +9,17 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 // contexts
 import Multilang from "./context/multilang";
+import ThemeContextProvider from "./context/ThemeContext";
 // others
 import "./index.css";
 
 ReactDOM.render(
   <Multilang>
-    <Provider store={store}>
-      <App />
-    </Provider>
+    <ThemeContextProvider>
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </ThemeContextProvider>
   </Multilang>,
   document.getElementById("root")
 );

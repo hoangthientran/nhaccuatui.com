@@ -1,28 +1,19 @@
 // libs
-import React, { useContext } from "react";
+import React from "react";
 import { CloseOutlined } from "@ant-design/icons";
-// context
-import { ThemeContext } from "../../../../context/ThemeContext";
+// components
+import ChangeColor from "../ChangeColor";
 // other
 import "./style.scss";
 
-const NavPc = () => {
-  const { changeColor } = useContext(ThemeContext);
-  return (
-    <div className="nav-pc">
-      <label htmlFor="nav-pc-input" className="nav-pc-close">
-        <CloseOutlined />
-      </label>
-      <h3 className="name-title-color">Màu Chủ Đề</h3>
-      <ul className="nav-pc-list">
-        <li
-          onClick={changeColor}
-          className="color-item"
-          style={{ backgroundColor: "#f7c6f7" }}
-        ></li>
-      </ul>
-    </div>
-  );
-};
+const NavPc = () => (
+  <div className="nav-pc">
+    <label htmlFor="nav-pc-input" className="nav-pc-close">
+      <CloseOutlined />
+    </label>
+    <h3 className="name-title-color">Màu Chủ Đề</h3>
+    <ChangeColor />
+  </div>
+);
 
 export default NavPc;
