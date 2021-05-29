@@ -1,5 +1,5 @@
 // libs
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 // components
 import AlbumSkeletonList from "./AlbumSkeletonList";
@@ -18,6 +18,7 @@ const ListSongToday = () => {
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(1);
   const [songListToday, setSongListToday] = useState([]);
+  const typingTimeoutRef = useRef(null);
 
   useEffect(() => {
     try {
@@ -34,7 +35,12 @@ const ListSongToday = () => {
   // const songTodayList = useSelector((state) => state.listSongToday);
 
   const handlePageChange = (page) => {
-    setPage(page);
+    if (typingTimeoutRef.current) {
+      clearTimeout(typingTimeoutRef.current);
+    }
+    typingTimeoutRef.current = setTimeout(() => {
+      setPage(page);
+    }, 500);
   };
 
   // hover payUp + PayDown
@@ -46,13 +52,23 @@ const ListSongToday = () => {
 
   useEffect(() => {
     if (isHovered && (keyDown1 || keyDown2)) {
-      setPage(page > 1 ? page - 1 : 1);
+      if (typingTimeoutRef.current) {
+        clearTimeout(typingTimeoutRef.current);
+      }
+      typingTimeoutRef.current = setTimeout(() => {
+        setPage(page > 1 ? page - 1 : 1);
+      }, 500);
     }
   }, [isHovered, keyDown1, keyDown2]);
 
   useEffect(() => {
     if (isHovered && (keyUp1 || keyUp2)) {
-      setPage(page + 1 <= 3 ? page + 1 : page);
+      if (typingTimeoutRef.current) {
+        clearTimeout(typingTimeoutRef.current);
+      }
+      typingTimeoutRef.current = setTimeout(() => {
+        setPage(page + 1 <= 3 ? page + 1 : page);
+      }, 500);
     }
   }, [isHovered, keyUp1, keyUp2]);
 

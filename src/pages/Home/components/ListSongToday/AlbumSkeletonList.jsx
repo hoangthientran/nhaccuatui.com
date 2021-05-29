@@ -1,8 +1,8 @@
 // libs
 import React from "react";
-import "antd/dist/antd.css";
 import { Skeleton } from "antd";
 import PropTypes from "prop-types";
+import "antd/dist/antd.css";
 // others
 import "./style.scss";
 
