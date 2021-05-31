@@ -4,6 +4,7 @@ import React from "react";
 import FooterCooperation from "./mains/FooterCooperation";
 import FooterContainer from "./mains/FooterContainer";
 import FooterBoxCopyRight from "./mains/FooterBoxCopyRight";
+import Setting from "./mains/Setting";
 // others
 import "./style.scss";
 
@@ -12,6 +13,7 @@ const Footer = () => (
     <FooterCooperation />
     <FooterContainer />
     <FooterBoxCopyRight />
+    <Setting />
   </div>
 );
 

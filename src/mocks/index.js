@@ -12,3 +12,4 @@ export * from "./Home/SongHot";
 export * from "./Home/Top100";
 export * from "./Home/TrendList";
 export * from "./Home/Footer";
+export * from "./Home/Setting";
