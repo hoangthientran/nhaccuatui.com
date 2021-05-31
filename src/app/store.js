@@ -1,8 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import songReducer from "../pages/Home/components/ListSongToday/listSongSlice";
+import songTodayReducer from "../pages/Home/components/ListSongToday/songTodaySlice";
+import karaokeReducer from "../pages/Home/components/BoxKaraoke/karaokeSlice";
 
 const rootReducer = {
-  song: songReducer,
+  listSongToday: songTodayReducer,
+  listKaraoke: karaokeReducer,
 };
 
 // setup redux store

@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import "./style.scss";
 
 const ThumbnailMv = ({ item }) => (
-  <span className="thumb-avatar-mv-wrapper">
+  <span className="thumb-mv-wrapper">
     <img className="img-mv" src={item.src_main} alt={item.name_song} />
   </span>
 );

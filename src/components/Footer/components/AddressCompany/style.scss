@@ -1,12 +1,10 @@
 .address-company-wrapper {
-  margin-top: 23px;
-
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
 
+  margin-top: 23px;
   cursor: pointer;
-
   color: #fff;
 
   &:hover {
@@ -15,7 +13,6 @@
 
   .icon-address {
     margin: -3px 11px 6px 0;
-
     font-size: 20px;
   }
 

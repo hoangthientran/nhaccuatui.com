@@ -21,7 +21,7 @@ const FooterCooperation = () => {
         const { data } = await cooperationApi.getAll(params);
         setCooperationList(data);
       } catch (error) {
-        console.log("Failed to fetch cooporation list:", error);
+        // console.log("Failed to fetch cooporation list:", error);
       }
     })();
   }, []);
