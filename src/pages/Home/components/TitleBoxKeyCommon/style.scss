@@ -5,23 +5,17 @@
 
   .title-common {
     margin: 0 0 10px 0;
-
+    cursor: pointer;
     font-size: 26px;
-    font-weight: 400;
-
+    font-weight: 500;
     line-height: 36px;
     color: #2daaed;
-
     text-transform: uppercase;
-
-    cursor: pointer;
   }
 
   .icon-right-common {
     margin: 0 0 15px 10px;
-
     cursor: pointer;
-
     color: #7a7a7a;
   }
 }

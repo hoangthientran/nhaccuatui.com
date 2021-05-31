@@ -7,7 +7,7 @@ import "./style.scss";
 const FooterButtonNext = ({ firstId, setFirstId, lastId, setLastId }) => {
   const typingTimeoutRef = useRef(null);
   const handleClickNext = () => {
-    if (firstId === 9) {
+    if (firstId === 12) {
       if (typingTimeoutRef.current) {
         clearTimeout(typingTimeoutRef.current);
       }

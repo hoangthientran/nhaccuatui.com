@@ -1,6 +1,7 @@
 // libs
 import React, { useEffect, useRef, useState } from "react";
 import { useDispatch } from "react-redux";
+import { Pagination } from "antd";
 // components
 import AlbumSkeletonList from "./AlbumSkeletonList";
 import ElementSong from "../ElementSong";
@@ -11,7 +12,6 @@ import useHover from "../../../../hooks/useHover";
 import { songToday } from "./songTodaySlice";
 // others
 import "./style.scss";
-import { Pagination } from "antd";
 
 const ListSongToday = () => {
   const dispatch = useDispatch();

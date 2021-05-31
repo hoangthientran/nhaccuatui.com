@@ -1,6 +1,6 @@
 // libs
-import { SearchOutlined } from "@ant-design/icons";
 import React from "react";
+import { SearchOutlined } from "@ant-design/icons";
 // others
 import "./style.scss";
 

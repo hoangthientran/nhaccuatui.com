@@ -16,8 +16,8 @@ import "./App.css";
 
 const App = () => (
   <div>
-    <Header />
     <Router>
+      <Header />
       <Switch>
         <Redirect from="/nhaccuatui.com" to="/" exact />
         {routes.map((item) => (
@@ -29,8 +29,8 @@ const App = () => (
           />
         ))}
       </Switch>
+      <Footer />
     </Router>
-    <Footer />
   </div>
 );
 

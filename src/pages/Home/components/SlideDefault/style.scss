@@ -1,12 +1,19 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .slide-default-wrapper {
   margin-bottom: 20px;
-
   width: 840px;
 
   .img-default {
     width: 840px;
     height: 339px;
-
     cursor: pointer;
   }
 
@@ -14,24 +21,13 @@
     position: relative;
     width: 840px;
     height: 79px;
-
     background-color: #23262d;
 
     .thumbnail-item {
       float: left;
-
+      animation: fadeIn ease-in 0.5s;
       width: 100%;
       box-sizing: border-box;
-
-      animation: fadeIn ease-in 0.5s;
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
 
       .active {
         border: #e74c3c 4px solid;
@@ -42,7 +38,6 @@
         margin: 8px 5px 0px 5px;
         width: 158px;
         height: 63px;
-
         cursor: pointer;
       }
     }

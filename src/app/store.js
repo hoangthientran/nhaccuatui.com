@@ -1,3 +1,4 @@
+// reducer
 import { configureStore } from "@reduxjs/toolkit";
 import songTodayReducer from "../pages/Home/components/ListSongToday/songTodaySlice";
 import karaokeReducer from "../pages/Home/components/BoxKaraoke/karaokeSlice";

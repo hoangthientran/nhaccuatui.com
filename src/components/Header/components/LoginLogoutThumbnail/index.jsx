@@ -1,8 +1,8 @@
 // libs
 import React from "react";
 // components
-import TextBuyVip from "../TextBuyVip";
 import ThumbnailCircle from "../ThumbnailCircle";
+import TextBuyVip from "../TextBuyVip";
 // others
 import "./style.scss";
 

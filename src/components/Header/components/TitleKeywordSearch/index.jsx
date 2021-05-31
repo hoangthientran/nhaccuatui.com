@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import "./style.scss";
 
 const TitleKeywordSearch = ({ title }) => (
-  <h3 className="title_keyword">{title}</h3>
+  <h3 className="title-top-keyword">{title}</h3>
 );
 
 TitleKeywordSearch.propTypes = {

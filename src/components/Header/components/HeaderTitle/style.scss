@@ -1,7 +1,6 @@
 .item {
   position: relative;
   margin-bottom: 5px;
-
   padding: 1px 16px 0 0;
 
   cursor: pointer;
@@ -10,7 +9,7 @@
   color: #222222;
 
   .text-title {
-    font-weight: 400;
+    font-weight: 500;
   }
 
   &:hover .text-title {

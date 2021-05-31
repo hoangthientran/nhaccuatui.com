@@ -2,13 +2,12 @@
   margin-top: 74px;
   &-inner {
     position: relative;
-    margin: 0 auto;
-
     display: grid;
     grid-template-columns: 840px 300px;
     grid-template-rows: auto auto;
     grid-gap: 30px;
-
+    
+    margin: 0 auto;
     max-width: 1170px;
   }
 }

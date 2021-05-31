@@ -14,7 +14,7 @@ const FooterBigCooperationList = ({ cooperationList }) => {
 
   useEffect(() => {
     const loop = setInterval(() => {
-      if (firstId === 9) {
+      if (firstId === 12) {
         setFirstId(0);
         setLastId(6);
       } else {

@@ -1,5 +1,6 @@
 // libs
 import React from "react";
+// components
 import ItemDropdown from "../ItemDropdown";
 // others
 import "./style.scss";

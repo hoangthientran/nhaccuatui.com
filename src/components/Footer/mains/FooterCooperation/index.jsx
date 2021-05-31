@@ -28,7 +28,7 @@ const FooterCooperation = () => {
 
   return (
     <div className="footer-cooperation-wrapper">
-      <div className="footer-container-wrapper-inner">
+      <div className="footer-cooperation-wrapper-inner">
         <FooterCooperationTitle />
         <FooterBigCooperationList cooperationList={cooperationList} />
       </div>

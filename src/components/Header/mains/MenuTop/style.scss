@@ -1,16 +1,13 @@
-.header-menu-top-wrapper {
+.menu-top-wrapper {
   width: 100%;
-
-  .menu-top-inner {
+  &-inner {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
     grid-template-rows: auto;
 
     margin: 0;
-    padding-left: 0;
-
     width: auto;
-
+    padding-left: 0;
     align-items: center;
     list-style: none;
   }

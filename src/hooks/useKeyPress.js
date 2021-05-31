@@ -28,6 +28,7 @@ const useKeyPress = (targetKey) => {
       window.removeEventListener("keyup", upHandler);
     };
   }, [targetKey]);
+
   return keyPressed;
 };
 

@@ -2,16 +2,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
-import store from "./app/store";
-// components
-import App from "./App";
-// import store from "./app/store";
-import reportWebVitals from "./reportWebVitals";
 // contexts
 import Multilang from "./context/multilang";
 import ThemeContextProvider from "./context/ThemeContext";
+// store
+import store from "./app/store";
+// components
+import App from "./App";
 // others
 import "./index.css";
+import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <Multilang>

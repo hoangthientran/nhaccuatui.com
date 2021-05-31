@@ -8,7 +8,7 @@ import "./style.scss";
 
 const SlideDefault = () => {
   // 1
-  const [activeDefault, setActiveDefault] = useState(listImage[0].status);
+  const [activeDefault, setActiveDefault] = useState(listImage[0].src);
   const [index, setIndex] = useState(0);
   const curentIndex = useRef(0);
 

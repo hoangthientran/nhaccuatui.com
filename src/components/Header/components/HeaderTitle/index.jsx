@@ -1,16 +1,16 @@
 // libs
 import React from "react";
-// mocks
-import { titleHeader } from "../../../../mocks";
 // components
 import MenuSongDropdown from "../MenuSongDropdown";
+// mocks
+import { titleHeader } from "../../../../mocks";
 // others
 import "./style.scss";
 
 const HeaderTitle = () =>
-  titleHeader.map((item) => (
-    <li key={item.id} className="item item--song">
-      <span className="text-title">{item.name}</span>
+  titleHeader.map(({ id, name }) => (
+    <li key={id} className="item item--song">
+      <span className="text-title">{name}</span>
       <MenuSongDropdown />
     </li>
   ));

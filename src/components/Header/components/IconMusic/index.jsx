@@ -7,7 +7,7 @@ const IconMusic = () => (
   <span className="icon-music">
     <img
       src="https://stc-id.nixcdn.com/v11/images/header_new/ic_head_new.png"
-      alt=""
+      alt="img"
     />
   </span>
 );

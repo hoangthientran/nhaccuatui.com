@@ -1,8 +1,4 @@
 .icon-music {
-  &:hover img {
-    opacity: 0.8;
-  }
-
   margin-right: 30px;
   width: 19px;
   height: 18px;
@@ -10,4 +6,8 @@
   cursor: pointer;
   font-size: 13px;
   background-size: cover;
+
+  &:hover img {
+    opacity: 0.6;
+  }
 }

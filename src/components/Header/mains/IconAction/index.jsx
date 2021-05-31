@@ -2,7 +2,7 @@
 import React from "react";
 // components
 import IconMusic from "../../components/IconMusic";
-import IconUpload from "../IconUpload";
+import IconUpload from "../../components/IconUpload";
 // others
 import "./style.scss";
 

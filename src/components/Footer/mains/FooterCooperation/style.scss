@@ -1,11 +1,10 @@
 .footer-cooperation-wrapper {
   position: relative;
   padding-bottom: 15px;
-
   width: 100%;
   background-color: #efefef;
 
-  .footer-container-wrapper-inner {
+  &-inner {
     margin: 15px auto 0 auto;
     width: 1170px;
   }

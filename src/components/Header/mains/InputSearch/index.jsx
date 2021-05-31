@@ -6,7 +6,7 @@ import FormSearch from "../../components/FormSearch";
 import "./style.scss";
 
 const InputSearch = () => (
-  <div className="box-search-wrapper">
+  <div className="input-search-wrapper">
     <FormSearch />
   </div>
 );

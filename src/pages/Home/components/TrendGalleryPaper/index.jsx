@@ -1,9 +1,10 @@
 // libs
 import React from "react";
 import PropTypes from "prop-types";
+// components
+import ListImageGallery from "../ListImageGallery";
 // others
 import "./style.scss";
-import ListImageGallery from "../ListImageGallery";
 
 const TrendGalleryPaper = ({
   listTrend,

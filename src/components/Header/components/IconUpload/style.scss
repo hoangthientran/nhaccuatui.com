@@ -1,12 +1,12 @@
 .icon-upload {
-  &:hover img {
-    opacity: 0.8;
-  }
-
   width: 28px;
   height: 19px;
 
   cursor: pointer;
   font-size: 13px;
   background-size: cover;
+
+  &:hover img {
+    opacity: 0.6;
+  }
 }

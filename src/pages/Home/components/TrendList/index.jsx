@@ -1,15 +1,15 @@
 // libs
 import React, { useEffect, useRef, useState } from "react";
-
+// components
+import TrendItem from "../TrendItem";
+import TrendGalleryPaper from "../TrendGalleryPaper";
 // mocks
 import { listTrend } from "../../../../mocks";
 // others
 import "./style.scss";
-import TrendItem from "../TrendItem";
-import TrendGalleryPaper from "../TrendGalleryPaper";
 
 const TrendList = () => {
-  const [activeDefault, setActiveDefault] = useState(listTrend[0].status);
+  const [activeDefault, setActiveDefault] = useState(listTrend[0].src);
   const [index, setIndex] = useState(0);
   const curentIndex = useRef(0);
 

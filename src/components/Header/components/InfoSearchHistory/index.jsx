@@ -1,5 +1,6 @@
 // libs
 import React from "react";
+// mocks
 import { infoSearchHistory } from "../../../../mocks";
 // others
 import "./style.scss";
@@ -12,7 +13,7 @@ const InfoSearchHistory = () => (
         <span className="btn-delete-search">
           <img
             src="https://stc-id.nixcdn.com/v11/images/header_new/ic_delete_new.png"
-            alt=""
+            alt={name}
           />
         </span>
       </li>

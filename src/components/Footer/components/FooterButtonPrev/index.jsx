@@ -1,6 +1,6 @@
 // libs
-import { LeftOutlined } from "@ant-design/icons";
 import React, { useRef } from "react";
+import { LeftOutlined } from "@ant-design/icons";
 // others
 import "./style.scss";
 

@@ -13,7 +13,6 @@ const ItemTitle = ({ item }) => (
 ItemTitle.propTypes = {
   item: PropTypes.object,
 };
-
 ItemTitle.defaultProps = {
   item: {},
 };

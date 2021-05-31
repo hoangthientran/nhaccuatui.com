@@ -13,8 +13,8 @@ import "./style.scss";
 const Header = () => {
   const { color } = useContext(ThemeContext);
   return (
-    <div className="menu-header-wrapper" style={{ backgroundColor: color }}>
-      <div className="menu-header-inner">
+    <div className="header-menu-wrapper" style={{ backgroundColor: color }}>
+      <div className="header-menu-wrapper-inner">
         <MenuTop />
         <UserLoginLogout />
         <IconAction />

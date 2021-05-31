@@ -1,12 +1,12 @@
 .login-logout-item-wrapper {
   list-style: none;
-
   .item-small {
     padding: 8px 0;
     text-align: center;
 
     .multi-lang {
       font-size: 16px;
+      font-weight:500;
     }
 
     &:nth-child(1) {

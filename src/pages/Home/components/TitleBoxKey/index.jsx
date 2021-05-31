@@ -8,7 +8,7 @@ const TitleBoxKey = ({ nameLanguage }) => (
   <div className="title-box-key-wapper">
     <h2>{nameLanguage}</h2>
     <span className="icon-right">
-      <RightOutlined style={{ marginTop: "11px" }} />
+      <RightOutlined style={{ marginTop: "9px", fontSize: "18px" }} />
     </span>
   </div>
 );
