@@ -1,20 +1,19 @@
 // libs
-import PropTypes from "prop-types";
 import React from "react";
+import { Skeleton } from "antd";
+import PropTypes from "prop-types";
 import "antd/dist/antd.css";
-import { Col, Row, Skeleton } from "antd";
-
-const style = { width: "840px", display: "flex", flexFlow: "row nowrap" };
-const style2 = { width: "152px", height: "152px" };
+// others
+import "./style.scss";
 
 const AlbumSkeletonList = ({ length }) => (
-  <Row gutter={{ xs: 2, sm: 3, md: 5, lg: 5 }} style={style}>
+  <ul className="album-skeleton-wrapper">
     {Array.from(new Array(length)).map(() => (
-      <Col key={Math.random()} className="gutter-row" span={5}>
-        <Skeleton.Image style={style2} />
-      </Col>
+      <li key={Math.random()} className="album-skeleton-item">
+        <Skeleton.Image className="img-skeleton-album" />
+      </li>
     ))}
-  </Row>
+  </ul>
 );
 
 AlbumSkeletonList.propTypes = {

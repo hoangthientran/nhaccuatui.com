@@ -2,7 +2,31 @@
   display: grid;
   grid-template-columns: auto auto auto auto auto;
   grid-template-rows: auto auto;
-
   margin: 0;
   padding: 0;
+}
+
+.pagination-song-today {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.album-skeleton-wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto;
+  width: 840px;
+  height: 152px;
+
+  .album-skeleton-item {
+    margin-right: 20px;
+    list-style: none;
+
+    .img-skeleton-album {
+      width: 152px;
+      height: 152px;
+    }
+  }
 }

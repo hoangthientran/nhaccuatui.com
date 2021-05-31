@@ -1,17 +1,28 @@
 // libs
-import React from "react";
+import React, { useRef } from "react";
 import { RightOutlined } from "@ant-design/icons";
 // others
 import "./style.scss";
 
 const FooterButtonNext = ({ firstId, setFirstId, lastId, setLastId }) => {
+  const typingTimeoutRef = useRef(null);
   const handleClickNext = () => {
     if (firstId === 9) {
-      setFirstId(0);
-      setLastId(6);
+      if (typingTimeoutRef.current) {
+        clearTimeout(typingTimeoutRef.current);
+      }
+      typingTimeoutRef.current = setTimeout(() => {
+        setFirstId(0);
+        setLastId(6);
+      }, 500);
     } else {
-      setFirstId(firstId + 1);
-      setLastId(lastId + 1);
+      if (typingTimeoutRef.current) {
+        clearTimeout(typingTimeoutRef.current);
+      }
+      typingTimeoutRef.current = setTimeout(() => {
+        setFirstId(firstId + 1);
+        setLastId(lastId + 1);
+      }, 500);
     }
   };
 

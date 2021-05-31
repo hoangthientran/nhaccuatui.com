@@ -1,8 +1,11 @@
+// constants
+import { KARAOKE_LIST } from "../constants/endpoints";
+// axios
 import axiosClient from "./axiosClient";
 
 const karaokeApi = {
-  getAll(params) {
-    const url = "/listKaraoke";
+  getListKaraoke(params) {
+    const url = KARAOKE_LIST;
     return axiosClient.get(url, { params });
   },
 };

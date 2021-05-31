@@ -3,11 +3,11 @@ import { CONTENTSONGTODAY_LIST } from "../constants/endpoints";
 // axios
 import axiosClient from "./axiosClient";
 
-const listSongApi = {
-  getListSong() {
+const songTodayApi = {
+  getSongTodayApi(params) {
     const url = CONTENTSONGTODAY_LIST;
-    return axiosClient.get(url);
+    return axiosClient.get(url, { params });
   },
 };
 
-export default listSongApi;
+export default songTodayApi;

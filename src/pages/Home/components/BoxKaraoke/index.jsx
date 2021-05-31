@@ -1,97 +1,89 @@
 // libs
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { useDispatch } from "react-redux";
 import { Pagination } from "antd";
 // components
 import ItemKaraoke from "../ItemKaraoke";
+// actions
+import { karaoke } from "./karaokeSlice";
 // hooks
 import useKeyPress from "../../../../hooks/useKeyPress";
-// api
-import karaokeApi from "../../../../api/listKaraokeApi";
+import useHover from "../../../../hooks/useHover";
 // others
 import "./style.scss";
 
 const BoxKaraoke = () => {
+  const dispatch = useDispatch();
+  const [page, setPage] = useState(1);
   const [karaokeList, setKaraokeList] = useState([]);
-  const [pagination, setPagination] = useState({
-    _page: 1,
-    _limit: 4,
-    _totalRows: 16,
-  });
-
-  const [filters, setFilters] = useState({
-    _page: 1,
-    _limit: 4,
-  });
 
   useEffect(() => {
-    (async () => {
-      try {
-        const { data, pagination } = await karaokeApi.getAll(filters);
-        setKaraokeList(data);
-        setPagination(pagination);
-      } catch (error) {
-        console.log("Failed to fetch cooporation list:", error);
-      }
-    })();
-  }, [filters]);
+    try {
+      (async () => {
+        const action = karaoke(page);
+        const resultAction = await dispatch(action);
+        setKaraokeList(resultAction.payload);
+      })();
+    } catch (error) {
+      // console.log("Failed to fetch song list:", error);
+    }
+  }, [page]);
+  // const karaokeList = useSelector((state) => state.listKaraoke);
 
-  const handlePageChange = (page, pageSize) => {
-    setFilters((prevFilters) => ({
-      ...prevFilters,
-      _page: page,
-      _limit: pageSize,
-    }));
-  };
-
-  const [hover, setHover] = useState(false);
+  // hover payUp + PayDown
   const keyDown1 = useKeyPress("ArrowDown");
   const keyDown2 = useKeyPress("PageDown");
   const keyUp1 = useKeyPress("ArrowUp");
   const keyUp2 = useKeyPress("PageUp");
+  const [hoverRef, isHovered] = useHover();
+  const typingTimeoutRef = useRef(null);
+  // const debounced = useDebounce(page, 2000);
+
+  const handlePageChange = (page) => {
+    if (typingTimeoutRef.current) {
+      clearTimeout(typingTimeoutRef.current);
+    }
+    typingTimeoutRef.current = setTimeout(() => {
+      setPage(page);
+    }, 1000);
+  };
 
   useEffect(() => {
-    if (hover && (keyDown1 || keyDown2)) {
-      setFilters((prevFilters) => ({
-        ...prevFilters,
-        _page: prevFilters._page > 1 ? prevFilters._page - 1 : 1,
-      }));
+    if (isHovered && (keyDown1 || keyDown2)) {
+      if (typingTimeoutRef.current) {
+        clearTimeout(typingTimeoutRef.current);
+      }
+      typingTimeoutRef.current = setTimeout(() => {
+        setPage(page > 1 ? page - 1 : 1);
+      }, 500);
     }
-  }, [hover, keyDown1, keyDown2]);
+  }, [isHovered, keyDown1, keyDown2]);
 
   useEffect(() => {
-    if (hover && (keyUp1 || keyUp2)) {
-      setFilters((prevFilters) => ({
-        ...prevFilters,
-        _page:
-          prevFilters._page + 1 <= 4
-            ? prevFilters._page + 1
-            : prevFilters._page,
-      }));
+    if (isHovered && (keyUp1 || keyUp2)) {
+      if (typingTimeoutRef.current) {
+        clearTimeout(typingTimeoutRef.current);
+      }
+      typingTimeoutRef.current = setTimeout(() => {
+        setPage(page + 1 <= 4 ? page + 1 : page);
+      }, 500);
     }
-  }, [hover, keyUp1, keyUp2]);
+  }, [isHovered, keyUp1, keyUp2]);
 
   return (
-    <>
-      <ul
-        className="karaoke-list-wrapper"
-        onMouseEnter={() => {
-          setHover(true);
-        }}
-        onMouseLeave={() => {
-          setHover(false);
-        }}
-      >
+    <div ref={hoverRef}>
+      <ul className="karaoke-list-wrapper">
         <ItemKaraoke karaokeList={karaokeList} />
       </ul>
       <div className="pagination">
         <Pagination
-          defaultCurrent={pagination._page}
+          defaultCurrent={1}
           defaultPageSize={4}
-          total={pagination._totalRows}
+          total={16}
           onChange={handlePageChange}
         />
       </div>
-    </>
+    </div>
   );
 };
 
