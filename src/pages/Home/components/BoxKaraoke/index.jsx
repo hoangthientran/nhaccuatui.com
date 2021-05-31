@@ -1,5 +1,5 @@
 // libs
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 import { Pagination } from "antd";
 // components
@@ -30,25 +30,43 @@ const BoxKaraoke = () => {
   }, [page]);
   // const karaokeList = useSelector((state) => state.listKaraoke);
 
-  const handlePageChange = (page) => {
-    setPage(page);
-  };
   // hover payUp + PayDown
   const keyDown1 = useKeyPress("ArrowDown");
   const keyDown2 = useKeyPress("PageDown");
   const keyUp1 = useKeyPress("ArrowUp");
   const keyUp2 = useKeyPress("PageUp");
   const [hoverRef, isHovered] = useHover();
+  const typingTimeoutRef = useRef(null);
+  // const debounced = useDebounce(page, 2000);
+
+  const handlePageChange = (page) => {
+    if (typingTimeoutRef.current) {
+      clearTimeout(typingTimeoutRef.current);
+    }
+    typingTimeoutRef.current = setTimeout(() => {
+      setPage(page);
+    }, 1000);
+  };
 
   useEffect(() => {
     if (isHovered && (keyDown1 || keyDown2)) {
-      setPage(page > 1 ? page - 1 : 1);
+      if (typingTimeoutRef.current) {
+        clearTimeout(typingTimeoutRef.current);
+      }
+      typingTimeoutRef.current = setTimeout(() => {
+        setPage(page > 1 ? page - 1 : 1);
+      }, 500);
     }
   }, [isHovered, keyDown1, keyDown2]);
 
   useEffect(() => {
     if (isHovered && (keyUp1 || keyUp2)) {
-      setPage(page + 1 <= 4 ? page + 1 : page);
+      if (typingTimeoutRef.current) {
+        clearTimeout(typingTimeoutRef.current);
+      }
+      typingTimeoutRef.current = setTimeout(() => {
+        setPage(page + 1 <= 4 ? page + 1 : page);
+      }, 500);
     }
   }, [isHovered, keyUp1, keyUp2]);
 
