@@ -8,6 +8,7 @@ const InputFormSearch = () => (
     type="text"
     className="input-search-form"
     placeholder="Tìm bài hát, video, playlist, ca sĩ"
+    id="input-search"
   />
 );
 
