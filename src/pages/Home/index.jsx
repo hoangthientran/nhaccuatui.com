@@ -11,7 +11,7 @@ Home.propTypes = {};
 function Home() {
   return (
     <div className="box-content-wrapper">
-      <div className="box-content-wrapper-inner">
+      <div clafssName="box-content-wrapper-inner">
         <BoxLeft />
         <BoxRight />
       </div>
