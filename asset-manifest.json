@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/nhaccuatui.com/static/css/main.43ec0b80.chunk.css",
-    "main.js": "/nhaccuatui.com/static/js/main.950fe1a6.chunk.js",
-    "main.js.map": "/nhaccuatui.com/static/js/main.950fe1a6.chunk.js.map",
+    "main.css": "/nhaccuatui.com/static/css/main.c65df732.chunk.css",
+    "main.js": "/nhaccuatui.com/static/js/main.5979d5e0.chunk.js",
+    "main.js.map": "/nhaccuatui.com/static/js/main.5979d5e0.chunk.js.map",
     "runtime-main.js": "/nhaccuatui.com/static/js/runtime-main.aeefef43.js",
     "runtime-main.js.map": "/nhaccuatui.com/static/js/runtime-main.aeefef43.js.map",
     "static/css/2.54787924.chunk.css": "/nhaccuatui.com/static/css/2.54787924.chunk.css",
@@ -12,14 +12,14 @@
     "static/js/3.5c312e94.chunk.js.map": "/nhaccuatui.com/static/js/3.5c312e94.chunk.js.map",
     "index.html": "/nhaccuatui.com/index.html",
     "static/css/2.54787924.chunk.css.map": "/nhaccuatui.com/static/css/2.54787924.chunk.css.map",
-    "static/css/main.43ec0b80.chunk.css.map": "/nhaccuatui.com/static/css/main.43ec0b80.chunk.css.map",
+    "static/css/main.c65df732.chunk.css.map": "/nhaccuatui.com/static/css/main.c65df732.chunk.css.map",
     "static/js/2.c99d1a5e.chunk.js.LICENSE.txt": "/nhaccuatui.com/static/js/2.c99d1a5e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.aeefef43.js",
     "static/css/2.54787924.chunk.css",
     "static/js/2.c99d1a5e.chunk.js",
-    "static/css/main.43ec0b80.chunk.css",
-    "static/js/main.950fe1a6.chunk.js"
+    "static/css/main.c65df732.chunk.css",
+    "static/js/main.5979d5e0.chunk.js"
   ]
 }
