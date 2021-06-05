@@ -43,13 +43,19 @@ const SlideDefault = () => {
       src={item.src}
       key={item.id}
       alt="thumnail"
+      title={item.title}
     />
   ));
 
   // 2
   return (
     <div className="slide-default-wrapper">
-      <img className="img-default" src={listImage[index].src} alt="img" />
+      <img
+        className="img-default"
+        src={listImage[index].src}
+        alt="img"
+        title="Nhạc Việt Hot Tháng 06/2021"
+      />
       <div className="thumbnail-slide">
         <div className="thumbnail-item">{images}</div>
       </div>
