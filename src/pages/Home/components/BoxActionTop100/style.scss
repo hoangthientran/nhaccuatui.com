@@ -1,12 +1,8 @@
 .box-action-top-100 {
   position: relative;
-  // z-index: 3;
-
   margin: 11px 15px 0 0;
-
   width: 60px;
   height: 60px;
-
   &:hover .icon-play-top-100 {
     display: inline-block;
     animation: fadeIn ease-in 0.6s;
@@ -24,7 +20,6 @@
   .img-top-100-small {
     width: 60px;
     height: 60px;
-
     cursor: pointer;
 
     &:hover .icon-play-top-100 {
@@ -43,16 +38,12 @@
   }
 
   .icon-play-top-100 {
+    display: none;
     position: absolute;
     top: 50%;
     left: 50%;
-    // z-index: 4;
-
     transform: translateY(-50%) translateX(-50%);
-
     color: #fff;
     font-size: 21px;
-
-    display: none;
   }
 }

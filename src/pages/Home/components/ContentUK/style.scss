@@ -5,11 +5,8 @@
   .number-stt-one {
     margin-bottom: 10px;
     padding: 0 0 10px 0;
-
     width: 300px;
-
     border-bottom: #f3f3f3 solid 1px;
-
     display: grid;
     grid-template-columns: 110px auto;
     grid-template-rows: auto;
@@ -18,13 +15,10 @@
   .number-stt {
     margin-bottom: 10px;
     padding: 0 0 10px 0;
-
     width: 300px;
-
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-
     border-bottom: #f3f3f3 solid 1px;
   }
 }

@@ -1,9 +1,7 @@
 .info-data-mv-wrapper {
   position: relative;
-
   width: 300px;
   height: 168px;
-
   cursor: pointer;
 
   &:hover .name-mv-big {
@@ -30,19 +28,14 @@
       position: absolute;
       left: 0;
       bottom: 0;
-
       margin: 66px 0 0 0;
-
       width: 46px;
       height: 46px;
-
       font-size: 20px;
       line-height: 46px;
       text-align: center;
-
       border: #e74c3c solid 1px;
       border-radius: 3px;
-
       background: #e74c3c;
       color: #ffffff;
     }
@@ -55,7 +48,6 @@
 
       font-size: 48px;
       color: #fff;
-
       display: none;
     }
 
@@ -67,23 +59,17 @@
 
   .name-mv-large-wrapper {
     position: absolute;
-
     bottom: 0;
-
     width: 300px;
     height: 50px;
-
     font-size: 14px;
     color: #a8a8a8;
 
     .name-mv-big {
       margin: 0px 0 0 58px;
-
       width: 239px;
-
       line-height: 22px;
       color: #fff;
-
       &:hover {
         color: #35aeee;
       }
@@ -91,10 +77,8 @@
 
     .name-singer-mv-large {
       margin: 0px 0 0 58px;
-
       line-height: 22px;
       font-size: 13px;
-
       &:hover {
         color: #35aeee;
       }

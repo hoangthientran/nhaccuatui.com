@@ -1,12 +1,10 @@
 .box-img-app-wrapper {
   display: flex;
   flex-flow: row nowrap;
-
   list-style: none;
 
   .item-img-app {
     margin: 0 16px 0 0;
-
     width: 108px;
   }
 }

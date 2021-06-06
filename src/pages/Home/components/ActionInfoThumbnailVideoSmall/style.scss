@@ -1,7 +1,6 @@
 .action-info-thumnail-video-small-wrapper {
   position: absolute;
   z-index: 2;
-
   width: 195px;
   height: 109px;
 
@@ -33,18 +32,13 @@
 
   .icon_play-small {
     position: absolute;
-
     top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
-
     width: 36px;
     height: 36px;
-
     font-size: 36px;
-
     color: #fff;
-
     display: none;
   }
 }
